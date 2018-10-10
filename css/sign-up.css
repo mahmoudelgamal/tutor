@@ -1,0 +1,172 @@
+
+.sign-up {
+    margin-bottom: 80px
+}
+
+.sign-up .head {
+    font-size: 30px;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+.sign-up .box {
+    max-width: 443px;
+    margin: auto
+}
+
+.sign-up .h-facebook {
+    margin: 0 auto 10px;
+    cursor: pointer;
+
+
+}
+
+.sign-up .facebook-h-content {
+
+    font-size: 30px;
+    color: #fff;
+    display: inline-block;
+    padding: 10px 35px 10px 20px;
+    font-weight: bold;
+
+}
+
+.sign-up .h-student-color {
+    background-color: #08526D
+}
+
+.sign-up .h-tutor-color {
+    background-color: #F58634
+}
+
+.sign-up .facebook-h-icon {
+
+    display: inline-block;
+    font-size: 26px;
+    padding: 22px 0 17px 35px;
+    color: #fff;
+
+    position: relative;
+    left: 5px;
+}
+
+@media(max-width:489px) {
+    .sign-up .box {
+        max-width: 300px;
+    }
+    .sign-up .facebook-h-icon {
+        font-size: 20px;
+        padding: 22px 0 17px 20px;
+    }
+    .sign-up .facebook-h-content {
+        font-size: 20px;
+        padding: 10px 20px 10px 20px;
+    }
+
+}
+
+
+.sign-up .h-facebook-color {
+    background-color: #554fa2;
+}
+
+.sign-up .facebook {
+    margin: 0 auto 45px;
+    width: 450px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.sign-up .facebook-content {
+    background-color: #554FA2;
+    font-size: 25px;
+    color: #fff;
+    display: inline-block;
+    padding: 3px 18px 3px 12px;
+    font-weight: bold;
+    letter-spacing: 0px;
+
+}
+
+.sign-up .facebook-icon {
+
+    display: inline-block;
+    font-size: 26px;
+    padding: 8px 0 9px 18px;
+    color: #fff;
+    background-color: #554fa2;
+    position: relative;
+    left: 7px;
+
+
+}
+
+.sign-up .fa-color {
+    background-color: #08526D;
+}
+
+.sign-up .fa-color2 {
+    background-color: #f49047;
+
+}
+
+.sign-up .padd-icon {
+    padding: 17px 17px;
+}
+
+.sign-up .modal-header {
+    border-bottom: none
+}
+
+.sign-up form {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.sign-up form .p-log {
+    font-size: 32px;
+    font-weight: normal;
+    margin-top: -21px;
+    margin-bottom: 35px;
+    color: #444;
+
+}
+
+.sign-up form .custom-check-center {
+    padding-left: 22%
+}
+
+.sign-up form input[type=submit] {
+    display: block;
+    background-color: #F58634;
+    padding: 4px 15px;
+    font-size: 25px;
+    border: none;
+    color: #fff;
+    font-weight: bold;
+    margin: 0 auto 10px;
+    width: 50%;
+    cursor: pointer
+}
+
+.sign-up form .instruction {
+    font-size: 12px;
+    color: #333;
+    display: block;
+    margin: 15px;
+}
+
+.sign-up form .teach {
+    margin: 0 0 9px;
+    font-size: 20px;
+
+}
+
+.sign-up form .custom-checkbox {
+    padding-right: 27px;
+}
+
+.sign-up form .m-custom {
+    margin-left: 25%
+}

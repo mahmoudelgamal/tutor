@@ -1,0 +1,426 @@
+body {
+	font-family: 'Open Sans', sans-serif;
+	background-color: #F7F9FB
+}
+
+/*start frame work*/
+@media (min-width: 1200px) {
+	.container {
+		max-width: 1323px;
+	}
+}
+
+/*end frame work*/
+/*start filter*/
+.filter {
+	background-color: #fff;
+	padding: 20px
+}
+
+@media (min-width: 1200px) {
+	.filter .container {
+		max-width: 1150px;
+	}
+}
+
+
+.filter ul {
+	border: 1px solid #f1f1f1;
+	border-radius: 4px;
+	overflow: hidden
+}
+
+.filter ul .content {
+	padding: 5px 5px 0
+}
+
+.filter ul li {
+	border-left: 1px solid #f1f1f1;
+
+}
+
+/*start teaches*/
+.filter ul .teaches {
+	cursor: initial;
+}
+
+.filter ul li.b-left {
+	border-left: 0
+}
+
+.filter ul .content .t-teaches-title {
+	color: #777575;
+	font-size: 12px;
+	text-align: center
+}
+
+.filter .t-teaches input {
+	border: 1px solid #e9e9e9 !important;
+	margin: auto;
+	width: 90%
+}
+
+.filter .t-teaches input:focus {
+	outline: 0
+}
+
+/*price*/
+.filter ul .price {
+	cursor: pointer;
+	-webkit-transition: all ease-in-out .3s;
+	transition: all ease-in-out .3s;
+}
+
+.filter ul .price:hover {
+	box-shadow: 2px 2px 5px #efecec, -2px -2px 5px #efecec;
+}
+
+.filter ul .price-title {
+	color: #777575;
+	font-size: 12px;
+	text-align: center
+}
+
+.filter ul .price p {
+	font-size: 11px;
+	color: #444;
+}
+
+/*counter of birth*/
+
+.filter ul .c-birth-title {
+	color: #777575;
+	font-size: 12px;
+	text-align: center
+}
+
+.filter .c-birth input {
+	border: 1px solid #e9e9e9 !important;
+	margin: auto;
+	display: block;
+	width: 100%
+}
+
+/*pick time*/
+.pick-time {
+	cursor: pointer;
+	-webkit-transition: all ease-in-out .3s;
+	transition: all ease-in-out .3s;
+	text-align: center
+}
+
+.pick-title {
+	color: #777575;
+	font-size: 12px;
+
+}
+
+.pick-time .p {
+	font-size: 14px;
+	color: #444;
+}
+
+.filter ul .pick-time:hover {
+	box-shadow: 2px 2px 5px #efecec, -2px -2px 5px #efecec;
+}
+
+.time-day {
+	border-bottom: 1px solid #e2e1e1;
+	padding-bottom: 12px;
+}
+
+.time-week {
+	padding-top: 12px;
+}
+
+
+/*end filter*/
+
+
+/*start price range*/
+.price-range {
+	width: 289px;
+	position: absolute;
+	top: 159px;
+	left: 28.7%;
+	z-index: 999;
+	height: 98px;
+	bottom: 36px;
+	padding: 10px;
+	border: 1px solid #f1efef;
+	background-color: #fff;
+	box-shadow: 2px 2px 5px #efeded, -2px -2px 5px #efeded;
+	display: none
+}
+
+/*end price range*/
+/* start pick day*/
+.pick-day {
+	background-color: #fff;
+	width: 272px;
+	position: absolute;
+	z-index: 999;
+	left: 71.4%;
+	top: 160px;
+	padding: 12px;
+	border-radius: 4px;
+	box-shadow: 2px 2px 5px #efeded, -2px -2px 5px #efeded;
+	display: none
+}
+
+.pick-day p {
+	font-size: 14px;
+	color: #a19f9f;
+}
+
+/*end pick day*/
+/*start filter framework */
+.boxshadow {
+	box-shadow: 2px 2px 5px #efeded, -2px -2px 5px #efeded;
+}
+
+@media(max-width:1200px) {
+	.pick-day {
+		width: 267px;
+		left: 74.4%;
+	}
+
+	.price-range {
+		width: 287px;
+		left: 25.9%;
+	}
+}
+
+@media(max-width:991px) {
+	.pick-day {
+		width: 159px;
+		left: 69%;
+	}
+}
+
+/*end filter framework */
+
+/*start tutor card*/
+.tutor-card .row {
+	margin: 0
+}
+
+.tutor-card .col-3,
+.tutor-card .col-2,
+.tutor-card .col-6 {
+	padding: 0
+}
+
+.tutor-card .content {
+	background-color: #fff;
+	border-radius: 6px;
+	padding: 10px;
+	margin-top: 13px;
+	margin-bottom: 13px;
+}
+
+.tutor-card .content .tutor-pict {
+	border-radius: 4px;
+	margin-left: 14px;
+	margin-top: 5px;
+	border: 1px solid #f7f5f5;
+	padding: 4px;
+	position: relative;
+	cursor: pointer;
+	-webkit-transition: all ease-in-out .3s;
+	transition: all ease-in-out .3s;
+}
+
+.tutor-card .content .tutor-pict:hover {
+	opacity: .9
+}
+
+.tutor-card .content .statu,
+.tutor-card .content .favourite {
+	position: absolute
+}
+
+.tutor-card .content .statu {
+	border: 5px solid #f7f4f4;
+	border-radius: 50%;
+	left: 17%;
+	top: 25px;
+}
+
+.tutor-card .content .statu.offline {
+	border: 5px solid #f7f4f4;
+}
+
+.tutor-card .content .statu.online {
+	border: 5px solid #1b9a19;
+}
+
+
+.tutor-card .content .favourite {
+	left: 70%;
+	top: 19px;
+	cursor: pointer;
+	color: #fff;
+}
+
+.tutor-card .content h3 {
+	font-size: 20px;
+	color: #444;
+}
+
+.tutor-card .content h3 img {
+	height: 10px;
+}
+
+.tutor-card .content h3 .fas {
+	color: #08526D;
+	font-size: 17px;
+}
+
+.tutor-card .content .your-language {
+	margin-bottom: 2px;
+	color: #444;
+	margin-top: -2px;
+	font-size: 14px;
+}
+
+.tutor-card .content .your-language .fas {
+	font-size: 12px;
+	margin-right: 5px;
+}
+
+.tutor-card .content .lessons {
+	margin-right: 7px;
+	color: #444;
+	font-size: 14px;
+
+}
+
+.tutor-card .content .language {
+	color: #444;
+	font-size: 14px;
+
+}
+
+.tutor-card .content .language .native {
+	background: rgba(80, 191, 22, .1);
+	color: #50bf16;
+}
+
+.tutor-card .content .info {
+	font-size: 13px;
+	color: #444;
+	margin-top: 3px;
+}
+
+.tutor-card .content .right-side {
+	text-align: center;
+	color: #444
+}
+
+.tutor-card .content .right-side span {
+	display: block
+}
+
+.tutor-card .content .right-side .fa-star {
+	color: #f58634;
+}
+
+.tutor-card .content .right-side .review,
+.tutor-card .content .right-side .p-h {
+	font-size: 14px;
+	color: #5d5d5d;
+	margin-top: 5px;
+}
+
+.tutor-card .content .right-side button {
+	margin-top: 15px
+}
+
+.tutor-card .content .right-side .free-trial {
+	color: #fff;
+	background-color: #F58634;
+	-webkit-transition: all ease-in-out .3s;
+	transition: all ease-in-out .3s;
+
+}
+
+.tutor-card .content .right-side .free-trial:hover {
+	opacity: .9
+}
+
+.tutor-card .content .right-side .send-message {
+	background-color: #fff;
+	border: 1.5px solid #f58634;
+	color: #f58634;
+}
+
+@media(max-width:1200px) {
+	.tutor-card .container {
+		max-width: 1115px;
+	}
+
+}
+
+/*end tutor card*/
+
+/*start hover card*/
+.hover-card {
+	background-color: #fff;
+	border-radius: 5px;
+	border: 1px solid #f0eeee;
+	margin-top: 13px;
+	position: relative
+}
+
+.hover-card::before {
+	content: "";
+	border-width: 20px;
+	border-color: transparent white transparent transparent;
+	border-style: solid;
+	display: block;
+	position: absolute;
+	top: 76px;
+	left: -10%;
+}
+
+.hover-card h5 {
+	color: #444;
+	font-size: 14px;
+	padding: 20px 0 7px 20px;
+
+}
+
+.hover-card .fa-globe-asia {
+	color: #ccc;
+}
+
+.hover-card video {
+	display: block;
+	margin: auto;
+	border-radius: 4px;
+}
+
+.hover-card img {
+	width: 86%;
+	display: block;
+	margin: auto;
+	margin-bottom: 20px;
+}
+
+.hover-card .view-scheduale {
+	background-color: #fff;
+	border: 1.5px solid #f58634;
+	color: #f58634;
+	display: block;
+	margin: auto;
+	padding: 3px 54px;
+	margin-bottom: 12px;
+	margin-top: 15px
+}
+
+#mySchedule {
+	width: 95%
+}
+
+/*end hover card*/
