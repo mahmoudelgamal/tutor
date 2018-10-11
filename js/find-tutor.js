@@ -14,9 +14,18 @@ $(document).ready(function () {
 	});
 
 	//price
+	$("input").click(function () {
+		$(".pick-day").hide();
+		$(".price-range").hide();
+		$(".price").removeClass("boxshadow");
+		$(".pick-time").removeClass("boxshadow");
+	})
 	$(".price").click(function () {
 		$(this).toggleClass('boxshadow');
 		$(".price-range").toggle();
+		$(".pick-day").hide();
+		$(".pick-time").removeClass("boxshadow");
+
 
 	});
 	////dynamic input range
@@ -30,10 +39,12 @@ $(document).ready(function () {
 	$(".pick-time").click(function () {
 		$(this).toggleClass('boxshadow');
 		$(".pick-day").toggle();
+		$(".price-range").hide();
+		$(".price").removeClass("boxshadow");
 
 	});
 	// hover card
-		//schduale
+	//schduale
 	$('#mySchedule').weekly_schedule({
 
 		// Days displayed

@@ -36,7 +36,6 @@ body {
 
 .filter ul li {
 	border-left: 1px solid #f1f1f1;
-
 }
 
 /*start teaches*/
@@ -57,7 +56,9 @@ body {
 .filter .t-teaches input {
 	border: 1px solid #e9e9e9 !important;
 	margin: auto;
-	width: 90%
+	width: 90%;
+	margin-left: 20px;
+	margin-right: 7px;
 }
 
 .filter .t-teaches input:focus {
@@ -100,6 +101,11 @@ body {
 	display: block;
 	width: 100%
 }
+
+.filter .c-birth input:focus {
+	outline: 0
+}
+
 
 /*pick time*/
 .pick-time {
@@ -198,6 +204,53 @@ body {
 	}
 }
 
+@media(max-width:767px) {
+	.filter ul li {
+		margin-bottom: 10px
+	}
+
+	.price-range {
+		width: 300px;
+		left: 29.9%;
+		top: 222px;
+	}
+
+	.pick-day {
+		width: 171px;
+		left: 69%;
+		top: 313px;
+	}
+
+}
+
+@media(max-width:575px) {
+	.price-range {
+		width: 311px;
+		left: 21.9%;
+		top: 222px;
+	}
+
+	.pick-day {
+		width: 171px;
+		left: 65%;
+		top: 313px;
+	}
+}
+
+@media(max-width:390px) {
+	.price-range {
+		width: 281px;
+		left: 12.9%;
+		top: 222px;
+	}
+
+	.pick-day {
+		width: 164px;
+		left: 55%;
+		top: 328px;
+	}
+}
+
 /*end filter framework */
 
 /*start tutor card*/
@@ -217,6 +270,7 @@ body {
 	padding: 10px;
 	margin-top: 13px;
 	margin-bottom: 13px;
+	overflow: hidden
 }
 
 .tutor-card .content .tutor-pict {
@@ -355,12 +409,144 @@ body {
 	color: #f58634;
 }
 
+@media(max-width:1260px) {
+	.tutor-card .content {
+		padding-left: 0;
+	}
+
+	.tutor-card .content .tutor-pict {
+		margin-left: 0;
+		margin-top: 0
+	}
+
+	.tutor-card .content .info {
+		font-size: 11px;
+	}
+
+	.tutor-card .content h3 {
+		font-size: 18px;
+	}
+
+	.tutor-card .content .language {
+		color: #444;
+		font-size: 12px;
+	}
+
+	.tutor-card .content .lessons {
+		margin-right: 7px;
+		color: #444;
+		font-size: 13px;
+	}
+}
+
 @media(max-width:1200px) {
 	.tutor-card .container {
-		max-width: 1115px;
+		max-width: 1172px;
+	}
+}
+
+@media(max-width:1090px) {
+	.tutor-card .content .right-side .free-trial {
+		font-size: 13px;
+	}
+
+	.tutor-card .content .right-side .send-message {
+		font-size: 13px;
+	}
+
+	.tutor-card .content .tutor-pict {
+		width: 145px !important
+	}
+
+	.tutor-card .content .your-language {
+		font-size: 12px;
+	}
+}
+
+@media(max-width:991px) {
+	@media (max-width: 1260px) .tutor-card .content .lessons {
+		font-size: 14px;
+	}
+
+	.tutor-card .content h3 {
+		font-size: 20px;
+	}
+
+	.tutor-card .content .language {
+		font-size: 13px;
+	}
+
+	.tutor-card .content .info {
+		font-size: 13px;
+	}
+
+	.tutor-card .content .tutor-pict {
+		width: 160px !important;
+		margin-left: 14px
+	}
+
+	.tutor-card .content .t-info {
+		margin-left: -28px;
+	}
+
+	.tutor-card .content .right-side .free-trial,
+	.tutor-card .content .right-side .send-message {
+		font-size: 16px;
+	}
+}
+
+@media(max-width:944px) {
+	.tutor-card .content .tutor-pict {
+		margin-left: 14px
+	}
+	.tutor-card .content .t-info {
+		margin-left: -10px;
+	}
+}
+@media(max-width:869px) {
+	.tutor-card .content .tutor-pict {
+		width: 145px!important
+	}
+}
+@media(max-width:805px) {
+	.tutor-card .content .t-info {
+		margin-left: 0px;
 	}
 
 }
+@media(max-width:767px) {
+	.tutor-card .content .t-info {
+		margin-left: 14px;
+	}
+
+}
+@media(max-width:710px) {
+	.tutor-card .content .tutor-pict {
+		margin-left: 0px
+	}
+
+}
+@media(max-width:657px) {
+	.tutor-card .col-sm-3,
+	.tutor-card .col-sm-6{
+		padding-left: 0;
+		padding-right: 0
+	}
+
+}
+@media(max-width:575px) {
+	.tutor-card .content .tutor-pict {
+		width: 160px!important;
+		margin-left: 25px
+	}
+	.tutor-card .content .t-info {
+		margin-top: 14px;
+	}
+
+}
+
+
+
 
 /*end tutor card*/
 
@@ -421,6 +607,12 @@ body {
 
 #mySchedule {
 	width: 95%
+}
+
+@media(max-width:991px) {
+	.hover-card {
+		display: none
+	}
 }
 
 /*end hover card*/
