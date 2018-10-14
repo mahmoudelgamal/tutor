@@ -1,5 +1,6 @@
 body {
-	background-color: #F7F9FB !important
+	background-color: #F7F9FB !important;
+	font-family: 'Open Sans', sans-serif !important;
 }
 
 /* start navbar*/
@@ -103,17 +104,20 @@ body {
 		display: block;
 		margin-bottom: 10px
 	}
-	.navbar-light .navbar-nav .navb-link:hover{
+
+	.navbar-light .navbar-nav .navb-link:hover {
 		border: 0;
 		padding-bottom: 0;
 		margin-bottom: 10px
 	}
+
 	.navbar-light .log-in:hover {
-    border-bottom: 0;
-    padding-bottom: 0;
-		
-}
-	.navbar-light .sign-up{
+		border-bottom: 0;
+		padding-bottom: 0;
+
+	}
+
+	.navbar-light .sign-up {
 		width: 24%;
 		margin: auto
 	}
@@ -125,6 +129,7 @@ body {
 		margin-left: 15px
 	}
 }
+
 @media(max-width:621px) {
 	.navbar-light .navbar-brand {
 		margin-right: 16px;
@@ -255,12 +260,12 @@ log-in .content a {
 }
 
 .log-in .content form button {
-    padding: 6px 14px;
-    width: 46%;
-    background-color: #F58634;
-    color: #fff;
-    font-weight: bold;
-    font-size: 19px;
+	padding: 6px 14px;
+	width: 46%;
+	background-color: #F58634;
+	color: #fff;
+	font-weight: bold;
+	font-size: 19px;
 }
 
 .log-in .content form button:hover {
@@ -275,44 +280,52 @@ log-in .content a {
 .btn:focus {
 	box-shadow: none
 }
+
 .form-control:focus {
-    border-color: #f58634;
+	border-color: #f58634;
 	box-shadow: none
 }
+
 .log-in .content .custom-control {
 	position: relative;
 	right: 12%;
 	top: -8px;
 	margin-bottom: 24px;
 }
-@media(max-width:767px){
+
+@media(max-width:767px) {
+
 	.log-in .content .social .facebook,
-    .log-in .content .social .google-p {
-	width: 68%;
-}
-}
-@media(max-width:500px){
-.log-in .content .social .fab {
-	margin-left: 0px;
-	margin-right: 5px;
+	.log-in .content .social .google-p {
+		width: 68%;
+	}
 }
 
-.log-in .content .social .fa-google {
-	position: relative;
-	left: 0px;
-	font-weight: normal;
+@media(max-width:500px) {
+	.log-in .content .social .fab {
+		margin-left: 0px;
+		margin-right: 5px;
+	}
+
+	.log-in .content .social .fa-google {
+		position: relative;
+		left: 0px;
+		font-weight: normal;
+
+	}
 
 }
 
-}
-@media(max-width:443px){
+@media(max-width:443px) {
+
 	.log-in .content .social .facebook,
 	.log-in .content .social .google-p {
 		font-size: 13px;
 		padding: 5px
 	}
+
 	.log-in .content .or-signup,
-	.log-in .content h3{
+	.log-in .content h3 {
 		text-align: center;
 		float: none
 	}

@@ -1,125 +1,191 @@
-body{
-	background-color: #fff!important
+body {
+	background-color: #F7F9FB !important;
 }
+
 /*navbar*/
-.navbar{
+.navbar {
 	box-shadow: none
 }
-.r-nav{
+
+.r-nav {
 	height: 37px;
 }
-@media(max-width:767px){
-	.r-nav{
-	height: 120px;
+
+@media(max-width:767px) {
+	.r-nav {
+		height: 120px;
+	}
 }
-}
+
 /*navbar*/
-/*steper*/
-.steps-form-2 {
-    display: table;
-    width: 100%;
-    position: relative;
+
+/*start multi stepper*/
+/*form styles*/
+#msform {
+	width: 800px;
+	min-height: 530px;
+	margin: -50px auto 50px;
+	text-align: center;
+	position: relative;
+	font-family: 'Open Sans', sans-serif !important;
+
 }
 
-.steps-form-2 .steps-row-2 {
-    display: table-row;
+#msform fieldset {
+	background: white;
+	border: 0 none;
+	border-radius: 3px;
+	box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.4);
+	padding: 20px 30px;
+	box-sizing: border-box;
+	width: 80%;
+	margin: 44px 12%;
+	position: relative;
 }
 
-.steps-form-2 .steps-row-2:before {
-    top: 14px;
-    bottom: 0;
-    position: absolute;
-    content: " ";
-    width: 100%;
-    height: 2px;
-    background-color: #7283a7;
+/*Hide all except first fieldset*/
+#msform fieldset:not(:first-of-type) {
+	display: none;
 }
 
-.steps-form-2 .steps-row-2 .steps-step-2 {
-    display: table-cell;
-    text-align: center;
-    position: relative;
+/*inputs*/
+#msform input,
+#msform textarea {
+	padding: 15px;
+	border: 1px solid #ccc;
+	border-radius: 3px;
+	margin-bottom: 10px;
+	width: 100%;
+	box-sizing: border-box;
+	color: #2C3E50;
+	font-size: 13px;
 }
 
-.steps-form-2 .steps-row-2 .steps-step-2 p {
-    margin-top: 0.5rem;
+/*buttons*/
+#msform .action-button {
+	width: 100px;
+	background: #08526D;
+	font-weight: bold;
+	color: white;
+	border: 0 none;
+	border-radius: 1px;
+	cursor: pointer;
+	padding: 10px 5px;
+	margin: 10px 5px;
+	display: inline;
 }
 
-.steps-form-2 .steps-row-2 .steps-step-2 button[disabled] {
-    opacity: 1 !important;
-    filter: alpha(opacity=100) !important;
+#msform .action-button:hover,
+#msform .action-button:focus {
+	box-shadow: 0 0 0 2px white, 0 0 0 3px #27AE60;
 }
 
-.steps-form-2 .steps-row-2 .steps-step-2 .btn-circle-2 {
-    width: 70px;
-    height: 70px;
-    border: 2px solid #59698D;
-    background-color: white !important;
-    color: #59698D !important;
-    border-radius: 50%;
-    padding: 22px 18px 15px 18px;
-    margin-top: -22px;
+/*headings*/
+.fs-title {
+	font-size: 20px;
+	font-weight: 600;
+	text-transform: capitalize;
+	color: #444;
+	margin-bottom: 10px;
 }
 
-.steps-form-2 .steps-row-2 .steps-step-2 .btn-circle-2:hover {
-    border: 2px solid #4285F4;
-    color: #4285F4 !important;
-    background-color: white !important;
+.fs-subtitle {
+	font-weight: normal;
+	font-size: 13px;
+	color: #666;
+	margin-bottom: 20px;
 }
 
-.steps-form-2 .steps-row-2 .steps-step-2 .btn-circle-2 .fa {
-    font-size: 1.7rem;
+/*progressbar*/
+#progressbar {
+	margin-bottom: 30px;
+	overflow: hidden;
+	/*CSS counters to number the steps*/
+	counter-reset: step;
 }
 
+#progressbar li {
+	list-style-type: none;
+	color: #444;
+	text-transform: uppercase;
+	font-size: 14px;
+	font-weight: 600;
+	width: 33.33%;
+	float: left;
+	position: relative;
+	bottom: -9px;
+	height: 70px;
+}
+
+#progressbar li:before {
+	content: counter(step);
+	counter-increment: step;
+	width: 35px;
+	padding: 6px 0;
+	line-height: 20px;
+	display: block;
+	font-size: 14px;
+	color: #333;
+	background: white;
+	border-radius: 3px;
+	margin: 0 auto 5px auto;
+	position: relative;
+	bottom: 6px;
+}
+
+/*progressbar connectors*/
+#progressbar li:after {
+	content: '';
+	width: 100%;
+	height: 2px;
+	background: white;
+	position: absolute;
+	left: -50%;
+	top: 9px;
+	z-index: -1;
+	/*put it behind the numbers*/
+}
+
+#progressbar li:first-child:after {
+	/*connector not needed before the first step*/
+	content: none;
+}
+
+/*marking active/completed steps green*/
+/*The number of the step and the connector before it = green*/
+#progressbar li.active:before,
+#progressbar li.active:after {
+	background: #08526d;
+	color: white;
+}
+
+/*end multi stepper*/
 /*start customize*/
-
-
-.sign-up .setup-content-2 h3{
-    font-weight: lighter;
-    color: #444
-}
-.sign-up .input-group>.form-control {
-    position: relative;
-    -ms-flex: 1 1 auto;
-    flex: 1 1 auto;
-    width: 1%;
-    margin-bottom: 0;
-    border: none;
-    border-bottom: 1px solid #d8d5d5;
-    border-radius: 0;
-    box-shadow: none;
-    margin-left: 0rem;
-    margin-bottom: 20px
-}
-.sign-up .input-group-prepend {
-        font-size: 23px;
-    margin-right: 10px
-}
-.sign-up .terms{
-    border: 1px solid #efeaea;
-    margin-top: 25px;
-    margin-bottom: 12px;
-    padding: 15px 0 0 30px;
-    cursor: pointer;
-    background-color: #fbfbfb;
-}
-.sign-up .md-form .prefix {
-    top: 14px;
-    font-size: 22px;
-}
-.sign-up .custom-file{
-    margin-bottom: 25px;
-}   
-
-.sign-up .custom-icon{
-    position: relative;
-    top: 12px;
-    
+.sign-up h2 {
+	margin-top: 18px;
+	color: #444;
 }
 
+.sign-up .setup-content-2 h3 {
+	font-weight: lighter;
+	color: #444
+}
 
+.sign-up .custom-file {
+	margin-bottom: 10px;
+	text-align: left
+}
 
+@media(max-width:991px) {
+	#msform {
+		width: 650px;
+	}
+}
 
-
+@media(max-width:767px) {
+	#msform {
+		max-width: 500px;
+	}
+}
 
 /*end customize*/
