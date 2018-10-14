@@ -879,7 +879,6 @@ button:focus {
 	.slider blockquote {
 		max-width: 450px;
 		margin-left: 4%
-
 	}
 
 	.slider label {
@@ -919,37 +918,38 @@ button:focus {
 	}
 
 }
+
 @media(max-width:487px) {
 	.slider blockquote {
 		max-width: 400px;
 		margin-left: 8%
-
 	}
 
 }
+
 @media(max-width:455px) {
 	.slider blockquote {
 		max-width: 400px;
 		margin-left: 4%
-
 	}
 
 }
+
 @media(max-width:435px) {
 	.slider blockquote {
 		max-width: 350px;
 		margin-left: 8%
-
 	}
+
 	.slider blockquote {
 		font-size: 14px
 	}
 
 }
+
 @media(max-width:400px) {
 	.slider blockquote {
 		margin-left: 5%
-
 	}
 }
 
@@ -1066,6 +1066,106 @@ button:focus {
 /*end satisfaction*/
 
 /*end how it work*/
+
+/*start tutor rate*/
+.tutor-rate {
+	background-color: #F7F9FB;
+	padding-bottom: 80px
+}
+
+.tutor-rate h2 {
+	color: #444;
+	font-size: 35px;
+	margin-bottom: 31px;
+
+}
+
+.tutor-rate .tutor {
+	background-color: #fff;
+	width: 100%;
+	border-radius: 5px;
+	box-shadow: 1px 1px 7px #e1dfdf, -1px -1px 7px #e1dfdf;
+	margin-bottom: 20px
+}
+
+.tutor-rate .tutor .tutor-picts img {
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+}
+
+.tutor-rate .tutor .tutor-picts {
+	width: 100%;
+
+}
+
+.tutor-rate .tutor .flag {
+	margin-top: 14px;
+	margin-bottom: 14px;
+	border-radius: 50%;
+	width: 55px;
+	height: 55px;
+	margin-left: 14px;
+}
+
+.tutor-rate .tutor h3 {
+	color: #444;
+	font-size: 21px;
+	margin-top: 14px;
+}
+
+.tutor-rate .tutor h3 .nationality {
+	color: #939393;
+	font-size: 15px;
+	margin-left: 7px;
+	font-weight: normal;
+}
+
+.tutor-rate .tutor .lesson {
+	position: relative;
+	top: 14px;
+	right: 7px;
+	color: #ccc;
+}
+
+.tutor-rate .tutor .lesson-number {
+	color: #a4a3a3;
+	margin-right: 3px;
+	font-size: 18px;
+}
+
+.tutor-rate .tutor p {
+	font-size: 11px;
+	color: #f58634;
+}
+
+@media(max-width:1200px){
+	.container {
+    max-width: 1128px;
+}
+}
+@media(max-width:1124px){
+	.tutor-rate .tutor .flag {
+    width: 42px;
+    height: 42px;
+	}
+	.tutor-rate .tutor h3 {
+    font-size: 16px;
+	}
+	.tutor-rate .tutor .lesson-number {
+    font-size: 14px;
+	}
+	.tutor-rate .tutor .lesson {
+    right: 24px;
+	}
+}
+
+@media(max-width:767px){
+	.tutor-rate .container {
+    max-width: 430px;
+}
+}
+
+/*end tutor rate*/
 
 /* start footer */
 

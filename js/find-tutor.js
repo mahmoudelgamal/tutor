@@ -57,7 +57,7 @@ $(document).ready(function () {
 		fontFamily: "'Open Sans', sans-serif",
 
 		// Font colot used in the component
-		fontColor: "#fff",
+		fontColor: "#444",
 
 		// Font weight used in the component
 		fontWeight: "400",
@@ -72,7 +72,7 @@ $(document).ready(function () {
 		selectionColor: "#08526D",
 
 		// Background color of headers
-		headerBackgroundColor: "#125973"
+		headerBackgroundColor: "#fff"
 
 	});
 
