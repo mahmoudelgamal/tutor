@@ -51,7 +51,7 @@ body {
 /*inputs*/
 #msform input,
 #msform textarea {
-	padding: 15px;
+	padding: 11px;
 	border: 1px solid #ccc;
 	border-radius: 3px;
 	margin-bottom: 10px;
@@ -175,7 +175,20 @@ body {
 	margin-bottom: 10px;
 	text-align: left
 }
+.sign-up .sign-up .custom-file:focus{
+	outline: 0
+}
 
+/*start student*/
+.form-check {
+	text-align: left
+}
+.terms{
+	    text-align: left;
+    background-color: #f7f9fb;
+    padding: 11px 7px 0;
+}
+/*end student*/
 @media(max-width:991px) {
 	#msform {
 		width: 650px;
