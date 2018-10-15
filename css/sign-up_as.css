@@ -175,7 +175,7 @@ body {
 	margin-bottom: 10px;
 	text-align: left
 }
-.sign-up .sign-up .custom-file:focus{
+.sign-up .custom-file:focus{
 	outline: 0
 }
 
@@ -184,7 +184,7 @@ body {
 	text-align: left
 }
 .terms{
-	    text-align: left;
+	text-align: left;
     background-color: #f7f9fb;
     padding: 11px 7px 0;
 }
