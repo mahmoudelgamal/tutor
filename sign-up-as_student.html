@@ -9,6 +9,8 @@
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
 	<link rel="stylesheet" href="css/log%20in.css">
 	<link rel="stylesheet" href="css/sign-up_as.css">
+	<link rel="stylesheet" href="css/sign-up-as_student.css">
+
 
 </head>
 
@@ -56,7 +58,6 @@
 					<ul id="progressbar">
 						<li class="active">Account Setup</li>
 						<li>Personal Details</li>
-						<li>Skills</li>
 					</ul>
 					<!-- fieldsets -->
 					<fieldset>
@@ -76,10 +77,7 @@
 						<input type="text" name="country" placeholder="Country" />
 						<input type="text" name="timezone" placeholder="time zone" />
 						<input type="text" name="city" placeholder="city" />
-						<input type="button" name="previous" class="previous action-button" value="Previous" />
-						<input type="button" name="next" class="next action-button" value="Next" />
-					</fieldset>
-					<fieldset>
+
 						<h2 class="fs-title">I want to learn</h2>
 						<h3 class="fs-subtitle">Select What do you Want to learn</h3>
 						<div class="form-check ">
@@ -109,6 +107,7 @@
 									</div>
 								</div>
 							</div>
+
 						</div>
 						<div class="terms">
 							<div class="custom-control custom-checkbox mb-3 form-group m-custom" style="position: relative;bottom: 5px;">
@@ -122,6 +121,30 @@
 				</form>
 			</div>
 		</div>
+
+		<div class="c-box">
+			<div class="custom-control custom-checkbox mb-3 form-group m-custom" style="position: relative;bottom: 5px;">
+				<input type="checkbox" class="custom-control-input form-control " checked id="customCheck55" name="">
+				<label class="custom-control-label  c-label" for="customCheck55"></label>
+			</div>
+		</div>
+		<div class="custom-button">
+			<button class="btn btn-add" id="addSkill">Add another skill <i class="fas fa-plus"></i></button>
+			<div class="add-skill">
+				<div class="row">
+					<div class="col-6">
+						<div class="form-group">
+							<input type="text" placeholder="type skill you want" class="form-control i-add-skill" id="cSkill">
+						</div>
+					</div>
+					<div class="col-6">
+						<div class="btn-add addCustom" >Add<i class="fas fa-plus"></i></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<span class="e-message"></span>
 	</section>
 
 	<!--end sign up as tutor  -->

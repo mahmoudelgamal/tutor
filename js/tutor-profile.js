@@ -46,6 +46,7 @@ $(document).ready(function () {
 
 	//right section scroll
 	$(window).on("scroll", function () {
+		console.log("vvdddd0000");
 		var sc = $(window).scrollTop();
 		if (sc > 300) {
 			$(".right-section").css({

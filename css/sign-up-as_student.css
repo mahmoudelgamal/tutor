@@ -1,0 +1,29 @@
+#progressbar {
+	width: 100%;
+	margin-left: 14%;
+}
+
+/*start custom add button*/
+.add-skill {
+	display: 
+}
+.custom-button .btn-add {
+	color: #fff;
+	background-color: #08526d;
+	border-radius: 0;
+	font-size: 12px;
+	padding: 5px;
+	margin-bottom: 20px;
+	width: 130px;
+}
+
+.custom-button .btn-add .fas {
+	font-size: 10px;
+	margin-left: 6px;
+}
+
+.custom-button .i-add-skill {
+	height: 31px;
+}
+
+/*end custom add button*/

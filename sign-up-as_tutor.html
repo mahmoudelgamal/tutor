@@ -53,7 +53,7 @@
 			<div class="container">
 				<h2 class="text-center font-bold pt-4 pb-5 mb-5"><strong>Sign Up as Tutor</strong></h2>
 				<!-- multistep form -->
-				<form id="msform">
+				<form id="msform" class="form_elem">
 					<!-- progressbar -->
 					<ul id="progressbar">
 						<li class="active">Account Setup</li>
@@ -84,24 +84,43 @@
 					<fieldset>
 						<h2 class="fs-title">Skills</h2>
 						<h3 class="fs-subtitle">Upload your skills (video, Recitation ,audio)</h3>
-						<div class="custom-file">
-							<input type="file" class="custom-file-input" id="customFile">
-							<label class="custom-file-label" for="customFile">Choose file</label>
+						<input type="text" name="head" placeholder="Headline" id="head" class="head" />
+						<span class="rem-message"></span>
+						<span id="error_msg" style="color:red;margin-top: -10px;display: block;margin-bottom: 10px"></span>
+						<textarea id="textarea"></textarea>
+						<span class="rem-text-message"></span>
+						<span id="error_text" style="color:red;margin-top: -10px;display: block;margin-bottom: 10px"></span>
+
+						<div class="row">
+							<div class="col-6">
+								<label class='__lk-fileInput'>
+									<span data-default='Choose file'>Upload your video</span>
+									<input type="file">
+								</label>
+							</div>
+							<div class="col-6">
+								<label class='__lk-fileInput'>
+									<span data-default='Choose file'>Upload your Recitation</span>
+									<input type="file">
+								</label>
+							</div>
 						</div>
-						<div class="custom-file">
-							<input type="file" class="custom-file-input" id="customFile1">
-							<label class="custom-file-label" for="customFile1">Choose file</label>
-						</div>
-						<div class="custom-file">
-							<input type="file" class="custom-file-input" id="customFile2">
-							<label class="custom-file-label" for="customFile2">Choose file</label>
-						</div>
-						<div class="custom-file">
-							<input type="file" class="custom-file-input" id="customFile3">
-							<label class="custom-file-label" for="customFile3">Choose file</label>
+						<div class="row">
+							<div class="col-6">
+								<label class='__lk-fileInput'>
+									<span data-default='Choose file'>Upload your Pict</span>
+									<input type="file">
+								</label>
+							</div>
+							<div class="col-6">
+								<label class='__lk-fileInput'>
+									<span data-default='Choose file'>Upload your video</span>
+									<input type="file">
+								</label>
+							</div>
 						</div>
 						<input type="button" name="previous" class="previous action-button" value="Previous" />
-						<input type="submit" name="submit" class="submit action-button" value="Submit" />
+						<input type="submit" name="submit" id="validate" class="submit action-button" value="Submit" />
 					</fieldset>
 				</form>
 			</div>

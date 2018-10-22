@@ -175,7 +175,8 @@ body {
 	margin-bottom: 10px;
 	text-align: left
 }
-.sign-up .custom-file:focus{
+
+.sign-up .custom-file:focus {
 	outline: 0
 }
 
@@ -183,12 +184,22 @@ body {
 .form-check {
 	text-align: left
 }
-.terms{
+
+.terms {
 	text-align: left;
-    background-color: #f7f9fb;
-    padding: 11px 7px 0;
+	background-color: #f7f9fb;
+	padding: 11px 7px 0;
 }
+
 /*end student*/
+
+/*start tutor*/
+
+
+.c-box{
+	display: none
+}
+/*end tutor*/
 @media(max-width:991px) {
 	#msform {
 		width: 650px;
