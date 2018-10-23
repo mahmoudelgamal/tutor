@@ -97,44 +97,29 @@ $(".submit").click(function () {
 
 
 //start choose file customize
-//$(function () {
-//	$('input').change(function () {
-//		var label = $(this).parent().find('span');
-//		if (typeof (this.files) != 'undefined') { // fucking IE      
-//			if (this.files.length == 0) {
-//				label.removeClass('withFile').text(label.data('default'));
-//			} else {
-//				var file = this.files[0];
-//				var name = file.name;
-//				var size = (file.size / 1048576).toFixed(3); //size in mb 
-//				label.addClass('withFile').text(name + ' (' + size + 'mb)');
-//			}
-//		} else {
-//			var name = this.value.split("\\");
-//			label.addClass('withFile').text(name[name.length - 1]);
-//		}
-//		return false;
-//	});
-//});
-
-//$('input[type="file"]').wrap('<div class="custom-input-file"></div>');
-//$('.custom-input-file').prepend('<span>Upload your file here</span>');
-//$('.custom-input-file').append('<i class="fas fa-upload"></i>')
-//$('input[type="file"]').change(function(){
-//	$(this).prev('span').text($(this).val());
-//})
+$('input[type="file"]').wrap('<div class="custom-input-file"></div>');
+$('.custom-input-file').prepend('<span>Upload your file here</span>');
+$('.custom-input-file').append('<i class="fas fa-upload"></i>')
+$('input[type="file"]').change(function(){
+	$(this).prev('span').text($(this).val());
+})
 //start dynamic add skill
 
+			
 $("#addSkill").click(function () {
-	var iSkill = $(".add-skill").html();
-	$(this).before(iSkill)
+	$(this).after('<div class="add-input-skill"><div class="row"><div class="col-6"><div class="form-group"><input type="text" placeholder="type skill you want" class="form-control i-add-skill" id="cSkill"></div></div><div class="col-6"><div class="btn-add addCustom" id="addCustom" style ="    width: 52px;cursor:pointer">Add<i class="fas fa-plus"></i></div></div></div></div>');
+//	var iSkill = $(".add-skill").html();
+//	$(this).before(iSkill)
 })
-$('.addCustom').click(function () {
-	var inputValue = $(".i-add-skill").val()
-	$(".c-label").html(inputValue);
-	$('.c-box').css({'display':'block'})
+$(document).on('click', '.addCustom' ,function () {
+    var inputValue = $(".i-add-skill").val();
+	if(! inputValue.length == 0){
+	$('<div class="c-box"><div class="custom-control custom-checkbox mb-3 form-group m-custom" style="position: relative;bottom: 5px;dispaly:inline"><input type="checkbox" class="custom-control-input form-control " checked id="customCheck55" name=""><label class="custom-control-label  c-label" for="customCheck55">' + inputValue +'</label></div></div>').appendTo(".check-skill");
+		}
+	$('.add-input-skill').hide();
 })
 
+//
 /// headline validiation
 $("#validate").click(function(){
     var inputStr = $("#head").val();
