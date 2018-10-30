@@ -63,11 +63,26 @@
 					<fieldset>
 						<h2 class="fs-title">Create your account</h2>
 						<h3 class="fs-subtitle">Basic Information</h3>
-						<input type="email" name="email" placeholder="Email" />
-						<input type="text" name="email" placeholder="Username" />
-						<input type="password" name="pass" placeholder="Password" />
-						<input type="password" name="cpass" placeholder="Confirm Password" />
-						<input type="button" name="next" class="next action-button" value="Next" />
+						<input type="email" name="email" class="email" placeholder="Email" required />
+						<input type="text" name="username" class="username" placeholder="Username" required />
+						<input type="password" id="password" name="password" placeholder="Password" class="username" required />
+						<input type="password" name="confirm_password" placeholder="Password" class="username" required />
+						<select required>
+							<option>Select your country</option>
+							<option>Egypt</option>
+						</select>
+						<select required>
+							<option>Select your Timezone</option>
+							<option>Egypt</option>
+						</select>
+						<input type="text" class="city" name="city" placeholder="city" />
+						<input type="number" name="age" class="age" placeholder="age" />
+						<select required>
+							<option>Select your Gender</option>
+							<option>male</option>
+							<option>female</option>
+						</select>
+						<input type="submit" name="submit" id="next" class=" action-button" value="Next" />
 					</fieldset>
 					<fieldset>
 						<h2 class="fs-title">Personal Details</h2>
@@ -216,7 +231,9 @@
 	<script src="js/propper.js"></script>
 	<script src="js/bootstrap.min.js"></script>
 	<script src="js/mdb.min.js"></script>
+	<script src="js/jquery.validate.min.js"></script>
 	<script src="js/sign-up.js"></script>
+
 
 </body>
 

@@ -23,7 +23,7 @@ body {
 /*form styles*/
 #msform {
 	width: 800px;
-	min-height: 530px;
+	min-height: 805px;
 	margin: -50px auto 50px;
 	text-align: center;
 	position: relative;
@@ -204,26 +204,30 @@ body {
 	position: relative;
 	padding: 8px;
 }
+
 form .u-title {
 	font-size: 16px;
-    text-align: left;
-    margin-top: 10px;
-    color: #444;
-}
-.custom-input-file span{
 	text-align: left;
-    display: block;
+	margin-top: 10px;
+	color: #444;
+}
+
+.custom-input-file span {
+	text-align: left;
+	display: block;
 	color: #656464;
 	font-size: 15px
 }
-.custom-input-file .fa-upload{
+
+.custom-input-file .fa-upload {
 	position: absolute;
-    top: 10px;
-    left: 89%;
-    color: #636262;
+	top: 10px;
+	left: 89%;
+	color: #636262;
 	z-index: 1;
 	color: #08526d
 }
+
 .custom-input-file input[type='file'] {
 	opacity: 0;
 	position: absolute;
@@ -234,6 +238,15 @@ form .u-title {
 	z-index: 2
 }
 
+select {
+	border: 1px solid #ccc;
+	color: #696868;
+	font-size: 13px;
+	padding: 12px 5px;
+	margin-bottom: 10px;
+	border-radius: 3px;
+	width: 100%;
+}
 
 /*end tutor*/
 @media(max-width:991px) {

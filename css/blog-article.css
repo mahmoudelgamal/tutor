@@ -1,0 +1,249 @@
+/*start blog body*/
+.blog-article .article-body {
+	background-color: #fff;
+	border: 1px solid #ededed;
+	margin-top: 60px;
+	margin-bottom: 60px;
+	padding: 16px 0;
+	border-radius: 3px;
+}
+
+.blog-article .article-body h3 {
+	font-size: 30px;
+	font-weight: bold;
+	color: #444;
+	padding-right: 16px;
+	padding-left: 16px;
+}
+
+.blog-article .article-body h5 {
+	font-size: 22px;
+	color: #929292;
+	padding-right: 16px;
+	padding-left: 16px;
+}
+
+.blog-article .article-body p {
+	font-size: 15px;
+	color: #5a5858;
+	padding-right: 16px;
+	padding-left: 16px;
+}
+
+.blog-article .article-body img {
+	margin-bottom: 25px;
+	width: 100%;
+	height: 360px;
+
+}
+
+.blog-article .article-body .fas,
+.blog-article .article-body .far {
+	font-size: 14px;
+	color: #aba8a8;
+}
+
+.blog-article .article-body .article-content h5 {
+	font-size: 23px;
+	color: #444;
+}
+
+.blog-article .article-body .article-content p {
+	color: #404040;
+}
+
+.blog-article .article-body .article-sharing h5 {
+	font-size: 18px;
+	font-weight: bold;
+	color: #464646;
+}
+
+.blog-article .article-body .article-sharing h5::before {
+	content: "";
+	width: 91px;
+	height: 2px;
+	display: block;
+	margin-bottom: 10px;
+	background-color: #ccc
+}
+
+/*start icon*/
+.icon-button {
+	background-color: white;
+	border-radius: 50%;
+	cursor: pointer;
+	display: inline-block;
+	font-size: 20px;
+	height: 35px;
+	line-height: 35px;
+	margin: 0 5px;
+	position: relative;
+	text-align: center;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	width: 35px;
+	border: 1px solid #ccc;
+	margin-right: 12px;
+}
+
+/* Circle */
+.icon-button span {
+	border-radius: 0;
+	display: block;
+	height: 0;
+	left: 50%;
+	margin: 0;
+	position: absolute;
+	top: 50%;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	-o-transition: all 0.3s;
+	transition: all 0.3s;
+	width: 0;
+}
+
+.icon-button:hover span {
+	width: 35px;
+	height: 35px;
+	border-radius: 50%;
+	margin: -18px;
+}
+
+.twitter span {
+	background-color: #4099ff;
+}
+
+.facebook span {
+	background-color: #3B5998;
+}
+
+.google-plus span {
+	background-color: #db5a3c;
+}
+
+/* Icons */
+.icon-button i {
+	background: none;
+	color: white;
+	height: 35px;
+	left: 0;
+	line-height: 35px;
+	position: absolute;
+	top: 0;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	-o-transition: all 0.3s;
+	transition: all 0.3s;
+	width: 35px;
+	z-index: 10;
+}
+
+.icon-button .fa-twitter {
+	color: #4099ff;
+}
+
+.icon-button .fa-facebook-f {
+	color: #3B5998;
+}
+
+.icon-button .fa-google-plus-g {
+	color: #db5a3c;
+}
+
+.icon-button:hover .fa-twitter,
+.icon-button:hover .fa-facebook-f,
+.icon-button:hover .fa-google-plus-g {
+	color: white;
+}
+
+.blog-article .article-body .articl-interactive h5 {
+	font-size: 18px;
+	font-weight: bold;
+	color: #464646;
+}
+
+.blog-article .article-body .articl-interactive h5::before {
+	content: "";
+	width: 81px;
+	height: 2px;
+	display: block;
+	margin-bottom: 10px;
+	background-color: #ccc
+}
+
+.blog-article .article-body .articl-interactive button {
+	margin-left: 16px;
+	color: #fff !important;
+	font-size: 14px;
+	background-color: #08526D;
+}
+
+.blog-article .article-body .articl-interactive button .far {
+	color: #fff
+}
+
+.blog-article .article-body .articl-interactive p {
+	font-size: 13px;
+	margin-top: 10px;
+
+}
+
+.blog-article .article-body .related-links {
+	padding-left: 16px;
+	padding-right: 16px
+}
+
+.blog-article .article-body .related-links h5 {
+	font-size: 18px;
+	padding: 0;
+	font-weight: bold;
+	color: #464646;
+}
+
+.blog-article .article-body .related-links h5::before {
+	content: "";
+	width: 67px;
+	height: 2px;
+	display: block;
+	margin-bottom: 10px;
+	background-color: #ccc
+}
+
+.blog-article .article-body .related-links a {
+	font-size: 13px;
+	color: #839bf5;
+	text-decoration: none
+}
+
+.blog-article .article-body .tags {
+	padding-left: 16px;
+	padding-right: 16px;
+	    margin-top: 10px;
+}
+
+.blog-article .article-body .tags .main-tag {
+	background-color: #08526d;
+	color: #fff;
+	padding: 2px 5px;
+	border-radius: 4px;
+	margin-right: 5px;
+}
+
+.blog-article .article-body .tags .main-tag .fas {
+	color: #fff
+}
+
+.blog-article .article-body .tags .tag {
+	background-color: #e8e8e8;
+	padding: 2px 4px;
+	border-radius: 3px;
+	margin-right: 5px;
+	display: inline-block;
+	margin-bottom: 5px;
+	font-size: 13px;
+	cursor: pointer
+}
+
+/*end blog body*/

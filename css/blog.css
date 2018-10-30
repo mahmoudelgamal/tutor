@@ -1,0 +1,110 @@
+/*start blog article*/
+.blog .article-list {
+	background-color: #fff;
+	border: 1px solid #ededed;
+	margin-top: 60px;
+	margin-bottom: 20px;
+	padding: 16px;
+	border-radius: 3px;
+}
+
+.blog .article-list .article-card {
+	margin-bottom: 40px
+}
+
+.blog .article-list .article-card img {
+	height: 190px;
+	width: 333px
+}
+
+.blog .article-list .article-card .fas {
+	color: #a9a9a9;
+	font-size: 12px;
+}
+
+.blog .article-list .article-card p {
+	margin-bottom: 2px;
+	font-size: 13px;
+}
+
+.blog .article-list .article-card p span {
+	margin-left: 30px
+}
+
+.blog .article-list .article-card h3 {
+	font-size: 19px;
+	font-weight: 600;
+	margin-top: 10px;
+}
+
+.blog .article-list .article-card button {
+	font-size: 14px;
+	padding: 3px 9px;
+	color: #fff;
+	background-color: #08526D;
+}
+
+/*start next page*/
+.next-page .next-page-button {
+	float: right;
+	color: #7a7878;
+	font-size: 15px;
+	cursor: pointer;
+	margin-bottom: 50px;
+}
+.next-page .next-page-button:hover {
+	color: #444
+}
+
+.next-page .next-page-icon {
+	border: 1px solid #afafaf;
+	padding: 5px 8px;
+}
+.next-page .next-page-text {
+border: 1px solid #afafaf;
+    padding: 5px 8px;
+    border-right: 0;
+}
+
+/*start next page*/
+/*end blog article*/
+
+/*start free trial*/
+.blog .free-trial {
+	background-color: #fff;
+	border: 1px solid #ededed;
+	margin-top: 60px;
+	margin-bottom: 60px;
+	padding: 16px;
+	border-radius: 3px;
+}
+
+.blog .free-trial h4 {
+	font-size: 17px;
+	color: #444;
+}
+
+.blog .free-trial h4::after {
+	content: "";
+	width: 100px;
+	display: block;
+	height: 3px;
+	background-color: #F58634;
+	margin-top: 10px
+}
+
+.blog .free-trial img {
+	margin-bottom: 15px
+}
+
+.blog .free-trial button {
+	color: #fff;
+	background-color: #08526D;
+	margin-bottom: 10px
+}
+
+.custom-select:focus {
+	box-shadow: none
+}
+
+/*end free trial*/

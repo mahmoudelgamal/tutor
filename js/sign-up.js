@@ -103,6 +103,11 @@ $('.custom-input-file').append('<i class="fas fa-upload"></i>')
 $('input[type="file"]').change(function(){
 	$(this).prev('span').text($(this).val());
 })
+// start validiation
+ 
+
+
+
 //start dynamic add skill
 
 			
@@ -159,3 +164,52 @@ $("#textarea").keyup(function(){
 		$("#error_text").hide();
 	}
 });
+
+///valdiate
+//		$.validator.setDefaults({
+//			submitHandler: function() {
+//				alert("kemfkrfnk!");
+//			}
+//		});
+//		$("#msform").validate({
+//			rules: {
+//				username: {
+//					required: true,
+//				},
+//				email: {
+//					required: true,
+//					email: true
+//				},
+//				password: {
+//					require: true,
+//					minlength: 5
+//				},
+//				confirm_password: {
+//					required: true,
+//					minlength: 5,
+//					equalTo: "#password"
+//				}
+//
+//			},
+//			messages: {
+//				username: {
+//					required: "please enter you user name",
+//				},
+//				email: {
+//					required: "please enter your email",
+//					email: "please enter valid mail"
+//				},
+//				password: {
+//					required: "please provide password",
+//					minlength: "must be at least 5 chars long"
+//				},
+//				confirm_password: {
+//					required: "please provide password",
+//					minlength: "must be at least 5 chars long",
+//					equalTo: "please enter the same password above"
+//				}
+//			}
+//
+//
+//		});
+
