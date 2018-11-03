@@ -3,7 +3,6 @@
 	background-color: #fff;
 	border: 1px solid #ededed;
 	margin-top: 60px;
-	margin-bottom: 60px;
 	padding: 16px 0;
 	border-radius: 3px;
 }
@@ -56,6 +55,7 @@
 	font-size: 18px;
 	font-weight: bold;
 	color: #464646;
+	margin-bottom: 14px;
 }
 
 .blog-article .article-body .article-sharing h5::before {
@@ -220,7 +220,7 @@
 .blog-article .article-body .tags {
 	padding-left: 16px;
 	padding-right: 16px;
-	    margin-top: 10px;
+	margin-top: 10px;
 }
 
 .blog-article .article-body .tags .main-tag {
@@ -247,3 +247,158 @@
 }
 
 /*end blog body*/
+
+/*start blogger name*/
+.blog-article .blogger-name {
+	background-color: #fff;
+	border: 1px solid #ededed;
+	margin-top: 40px;
+	margin-bottom: 40px;
+	padding: 20px;
+	border-radius: 3px;
+}
+
+.blog-article .blogger-name h3 {
+	font-size: 18px;
+	font-weight: bold;
+}
+
+.blog-article .blogger-name a {
+	text-decoration: none;
+	color: #444
+}
+
+/*end blogger name*/
+/*start related articles*/
+.blog-article .related-articles {
+	background-color: #fff;
+	border: 1px solid #ededed;
+	margin-top: 40px;
+	margin-bottom: 40px;
+	padding: 20px;
+	border-radius: 3px;
+}
+
+.blog-article .related-articles h3 {
+	font-size: 20px;
+	font-weight: bold;
+	color: #444;
+	margin-bottom: 27px
+}
+
+.blog-article .related-articles h3::after {
+	content: "";
+	width: 50px;
+	height: 3px;
+	display: block;
+	margin-top: 8px;
+	background-color: #F58634;
+}
+
+.blog-article .related-articles .date-fire {
+	font-size: 12px;
+	margin-top: 8px;
+	color: #8a8787;
+}
+
+.blog-article .related-articles .date-fire .row {
+	margin: 0
+}
+
+.blog-article .related-articles .date-fire .col-4,
+.blog-article .related-articles .date-fire .col-8 {
+	padding: 0
+}
+
+.blog-article .related-articles .date-fire .fire {
+	float: right
+}
+
+.blog-article .related-articles p {
+	font-size: 16px;
+	text-align: center;
+	font-weight: 600;
+	color: #444;
+}
+
+/*end related articles*/
+
+/*start leave arply*/
+.blog-article .leave-reply h3 {
+	font-size: 20px;
+	font-weight: bold;
+	color: #444;
+	margin-bottom: 27px
+}
+
+.blog-article .leave-reply h3::after {
+	content: "";
+	width: 50px;
+	height: 3px;
+	display: block;
+	margin-top: 8px;
+	background-color: #F58634;
+}
+
+.blog-article .leave-reply textarea {
+	width: 100%;
+	border: 1px solid #ccc;
+	padding: 9px 0 0;
+	text-indent: 10px;
+	border-radius: 3px;
+
+}
+.blog-article .leave-reply textarea:focus {
+	box-shadow:none;
+	outline: 0
+}
+
+.blog-article .leave-reply .form-check {
+	display: inline
+}
+
+.blog-article .leave-reply button[type="submit"] {
+	float: right;
+	font-size: 14px;
+    color: #fff;
+    background-color: #08526D;
+}
+
+.blog-article .leave-reply .register {
+	background-color: #fff;
+	border: 1px solid #ededed;
+	margin-bottom: 40px;
+	padding: 20px;
+	border-radius: 3px;
+	    margin-top: -7px
+}
+.blog-article .leave-reply .register .form-control:focus {
+    border-color: #ccc;
+    box-shadow: none;
+}
+.blog-article .leave-reply .register .form-control {
+    height: 29px;
+    border-radius: 3px;
+}
+.blog-article .leave-reply .register .p{
+font-size: 13px;
+    color: #969494;
+}
+.blog-article .leave-reply .register .icon{
+	float: right;
+	cursor: pointer
+}
+.blog-article .leave-reply .register .fab{
+    padding: 0px 10px 19px;
+    font-family: "Font Awesome 5 Brands";
+}
+.blog-article .leave-reply .register .fa-facebook-f {
+	color: #3b5998
+}
+.blog-article .leave-reply .register .fa-twitter {
+	color: #1da1f2
+}
+.blog-article .leave-reply .register .fa-google-plus-g {
+	color: #dd4b39
+}
+/*end leave arply*/
