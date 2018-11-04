@@ -579,7 +579,8 @@ select:focus {
 }
 
 #mySchedule {
-	width: 95%
+	width: 95%;
+	height: 200px
 }
 
 @media(max-width:1116px) {

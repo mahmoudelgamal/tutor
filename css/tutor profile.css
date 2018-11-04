@@ -460,6 +460,9 @@
 .scheduale select:focus {
 	outline: 0
 }
+#mySchedule {
+	font-size: 11px
+}
 
 /*end scheduale*/
 

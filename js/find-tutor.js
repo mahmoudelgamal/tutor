@@ -20,7 +20,7 @@ $(document).ready(function () {
 		$(".price").removeClass("boxshadow");
 		$(".pick-time").removeClass("boxshadow");
 	})
-	
+
 	$(".price").click(function () {
 		$(this).toggleClass('boxshadow');
 		$(".price-range").toggle();
@@ -45,39 +45,33 @@ $(document).ready(function () {
 
 	});
 	// hover card
-	//schduale
-	$('#mySchedule').weekly_schedule({
-
-		// Days displayed
-		days: ["sun", "mon", "tue", "wed", "thu", "fri", "sat"],
-
-		// Hours displyed
-		hours: "11:00AM-2:00PM",
-
-		// Font used in the component
-		fontFamily: "'Open Sans', sans-serif",
-
-		// Font colot used in the component
-		fontColor: "#444",
-
-		// Font weight used in the component
-		fontWeight: "400",
-
-		// Font size used in the component
-		fontSize: "15px",
-
-		// Background color when hovered
-		hoverColor: "#08526D",
-
-		// Background color when selected
-		selectionColor: "#08526D",
-
-		// Background color of headers
-		headerBackgroundColor: "#fff"
+		//schduale
+		$("#mySchedule").jqs({
+			mode: "edit",
+			days:[
+				"Sat",
+				"Sun",
+				"Mon",
+				"Tue",
+				"Wen",
+				"Thu",
+				"Fri",
+			],
+			data: [
+				{
+					day: 0,
+					periods: [
+          ["20:00", "00:00"],
+          ["00:00", "02:00"]
+      ]
+    }, {
+					day: 1,
+					periods: [
+          ["00:00", "08:30"],
+          ["09:00", "12:00"]
+      ]
+    }
+  ]
+		});
 
 	});
-
-
-
-
-});
