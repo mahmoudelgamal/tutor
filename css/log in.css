@@ -330,6 +330,18 @@ log-in .content a {
 		float: none
 	}
 }
+@media(max-width:414px) {
+    .log-in .content .form-control {
+    width: 100%;
+	}
+	.log-in .content .custom-control {
+    right: -5%;
+	}
+	.log-in .content form a {
+    left: 32%;
+    font-size: 12px;
+}
+}
 
 /*end log in*/
 

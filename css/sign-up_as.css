@@ -22,7 +22,7 @@ body {
 /*start multi stepper*/
 /*form styles*/
 #msform {
-	width: 800px;
+	width: 60%;
 	min-height: 805px;
 	margin: -50px auto 50px;
 	text-align: center;
@@ -38,8 +38,8 @@ body {
 	box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.4);
 	padding: 20px 30px;
 	box-sizing: border-box;
-	width: 80%;
-	margin: 44px 12%;
+    width: 100%;
+    margin: 44px auto;
 	position: relative;
 }
 
@@ -249,15 +249,11 @@ select {
 }
 
 /*end tutor*/
+
+
 @media(max-width:991px) {
 	#msform {
-		width: 650px;
-	}
-}
-
-@media(max-width:767px) {
-	#msform {
-		max-width: 500px;
+		width: 100%;
 	}
 }
 

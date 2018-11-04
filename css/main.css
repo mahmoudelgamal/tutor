@@ -1,9 +1,9 @@
 body {
 	background-image: url("../img/banner4.jpg");
 	background-size: cover;
-	background-repeat: repeat;
+	background-repeat: no-repeat;
 	background-position: center right;
-	height: 800px
+	height: 1200px
 }
 
 /*start frame work*/
@@ -159,6 +159,12 @@ body {
 
 	.navbar-light .navbar-nav .nav-item {
 		padding-left: 12px
+	}
+}
+
+@media(max-width:320px) {
+	.navbar-light .sign-up {
+		width: 26%;
 	}
 }
 
@@ -318,6 +324,38 @@ body {
 	}
 
 
+}
+
+@media(max-width:414px) {
+
+	.banner .left-section .input-group {
+		border: 2px solid #fff;
+	}
+
+	.banner .left-section select {
+		width: 73%;
+	}
+}
+
+@media(max-width:375px) {
+
+	.banner .left-section select {
+		width: 70%;
+	}
+}
+
+@media(max-width:360px) {
+
+	.banner .left-section select {
+		width: 68.6%;
+	}
+}
+
+@media(max-width:320px) {
+
+	.banner .left-section select {
+		width: 64%;
+	}
 }
 
 /*end left section*/
@@ -953,6 +991,35 @@ button:focus {
 	}
 }
 
+@media(max-width:375px) {
+	.slider blockquote {
+		margin-left: 3%;
+	}
+}
+
+@media(max-width:320px) {
+	.slider blockquote {
+		width: 298px;
+	}
+
+	.slider .info {
+		margin: 25px 0;
+		left: 12%
+	}
+
+	.slider label.first {
+		left: 25%;
+	}
+
+	.slider label.second {
+		left: 30%;
+	}
+
+	.slider label.third {
+		left: 35%;
+	}
+
+}
 
 /*end testimonial */
 
@@ -1026,6 +1093,17 @@ button:focus {
 	top: 73px;
 }
 
+@media (max-width:414px) {
+	.how-it-work .fa-compass {
+		left: 42%
+	}
+}
+@media (max-width:320px) {
+	.how-it-work .fa-compass {
+		left: 40%
+	}
+}
+
 /*start satisfaction*/
 .how-it-work .features .satisfaction {
 	border-top: 1px solid #ddf3f5;
@@ -1062,7 +1140,16 @@ button:focus {
 	width: 47%;
 	margin: auto;
 }
-
+@media (max-width:414px) {
+	.how-it-work .features .satisfaction .fas {
+		left: 40%
+	}
+}
+@media (max-width:320px) {
+	.how-it-work .features .satisfaction .fas {
+		left: 35%
+	}
+}
 /*end satisfaction*/
 
 /*end how it work*/
@@ -1138,31 +1225,35 @@ button:focus {
 	color: #f58634;
 }
 
-@media(max-width:1200px){
+@media(max-width:1200px) {
 	.tutor-rate .container {
-    max-width: 1128px;
-}
-}
-@media(max-width:1124px){
-	.tutor-rate .tutor .flag {
-    width: 42px;
-    height: 42px;
-	}
-	.tutor-rate .tutor h3 {
-    font-size: 16px;
-	}
-	.tutor-rate .tutor .lesson-number {
-    font-size: 14px;
-	}
-	.tutor-rate .tutor .lesson {
-    right: 24px;
+		max-width: 1128px;
 	}
 }
 
-@media(max-width:767px){
-	.tutor-rate .container {
-    max-width: 430px;
+@media(max-width:1124px) {
+	.tutor-rate .tutor .flag {
+		width: 42px;
+		height: 42px;
+	}
+
+	.tutor-rate .tutor h3 {
+		font-size: 16px;
+	}
+
+	.tutor-rate .tutor .lesson-number {
+		font-size: 14px;
+	}
+
+	.tutor-rate .tutor .lesson {
+		right: 24px;
+	}
 }
+
+@media(max-width:767px) {
+	.tutor-rate .container {
+		max-width: 430px;
+	}
 }
 
 /*end tutor rate*/

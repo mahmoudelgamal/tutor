@@ -13,57 +13,45 @@ $(document).ready(function () {
 
 	});
 	//schduale
-	$('#mySchedule').weekly_schedule({
-
-		// Days displayed
-		days: ["sun", "mon", "tue", "wed", "thu", "fri", "sat"],
-
-		// Hours displyed
-		hours: "11:00AM-6:00PM",
-
-		// Font used in the component
-		fontFamily: "'Open Sans', sans-serif",
-
-		// Font colot used in the component
-		fontColor: "#444",
-
-		// Font weight used in the component
-		fontWeight: "400",
-
-		// Font size used in the component
-		fontSize: "19px",
-
-		// Background color when hovered
-		hoverColor: "#08526D",
-
-		// Background color when selected
-		selectionColor: "#08526D",
-
-		// Background color of headers
-		headerBackgroundColor: "#fff"
-
+	$("#mySchedule").jqs({
+		mode: "edit",
+		data: [
+			{
+				day: 0,
+				periods: [
+          ["20:00", "00:00"],
+          ["00:00", "02:00"]
+      ]
+    }, {
+				day: 3,
+				periods: [
+          ["00:00", "08:30"],
+          ["09:00", "12:00"]
+      ]
+    }
+  ]
 	});
 
+
 	//right section scroll
-	$(window).on("scroll", function () {
-		console.log("vvdddd0000");
+	$(window).on('scroll', function () {
+		console.log("kmvon");
 		var sc = $(window).scrollTop();
-		if (sc > 300) {
+		console.log(sc);
+		if (sc > 2133) {
+			$(".right-section").fadeOut();
+		} else if (sc > 300) {
 			$(".right-section").css({
 				"position": "fixed",
 				"top": "250px",
 				"width": "343px"
 
 			});
-
-		} else if (sc > 1000) {
-			$(".right-section").css({
-				"position": "static"
-			});
-
 		} else {
-			$(".right-section").css({
-				"position": "static"
+			$(".right-section").fadeIn().css({
+				"position": "relative",
+				"top": "0px",
+
 			});
 		};
 	});

@@ -14,12 +14,13 @@ $(document).ready(function () {
 	});
 
 	//price
-	$("input").click(function () {
+	$("input ,select").click(function () {
 		$(".pick-day").hide();
 		$(".price-range").hide();
 		$(".price").removeClass("boxshadow");
 		$(".pick-time").removeClass("boxshadow");
 	})
+	
 	$(".price").click(function () {
 		$(this).toggleClass('boxshadow');
 		$(".price-range").toggle();

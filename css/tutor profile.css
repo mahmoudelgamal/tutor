@@ -172,357 +172,361 @@
 		left: 96% !important;
 	}
 }
-	@media(max-width:690px) {
-		.banner .favourite {
-			left: 98% !important;
-		}
 
+@media(max-width:690px) {
+	.banner .favourite {
+		left: 98% !important;
 	}
 
-	@media(max-width:575px) {
-		.banner .favourite {
-			left: 29% !important;
-		}
+}
 
-		.banner .statu {
-			left: 8%
-		}
-
-		.banner .gnl-info {
-			margin-left: 0px;
-		}
-
-		.banner h3 {
-			margin-top: 20px
-		}
+@media(max-width:575px) {
+	.banner .favourite {
+		left: 29% !important;
 	}
 
-	@media(max-width:508px) {
-		.banner .favourite {
-			left: 34% !important;
-		}
-
+	.banner .statu {
+		left: 8%
 	}
 
-	@media(max-width:400px) {
-		.banner .favourite {
-			left: 43% !important;
-		}
-
-		.banner .statu {
-			left: 14%
-		}
+	.banner .gnl-info {
+		margin-left: 0px;
 	}
 
+	.banner h3 {
+		margin-top: 20px
+	}
+}
 
-
-
-	/*end banner*/
-	/*start about the tutor*/
-	.about-tutor .inner-about {
-		background-color: #fff;
-		border: 1px solid #eeeff1;
-		border-radius: 6px;
-		padding: 30px;
-		position: relative;
-		bottom: 42px;
+@media(max-width:508px) {
+	.banner .favourite {
+		left: 34% !important;
 	}
 
-	.about-tutor h3 {
-		color: #444;
-		font-size: 20px;
-		margin-bottom: 21px;
-		font-weight: bold;
+}
+
+@media(max-width:414px) {
+	.banner .favourite {
+		left: 38% !important;
 	}
 
-	.about-tutor .details {
-		color: #696969;
-		padding-bottom: 30px;
-		border-bottom: 1px solid #e9e9e9
+	.banner .statu {
+		left: 11%;
 	}
+}
 
-	.about-tutor .ans {
-		color: #444;
-		position: relative;
-		left: 8px;
-		top: 26px;
-		bottom: 1px;
-
+@media(max-width:375px) {
+	.banner .favourite {
+		left: 42% !important;
 	}
+}
 
-	.about-tutor h5 {
-		font-weight: bold;
-		font-size: 17px;
-		color: #444;
-		margin-top: 27px;
-		margin-bottom: 20px;
-	}
+/*end banner*/
+/*start about the tutor*/
+.about-tutor .inner-about {
+	background-color: #fff;
+	border: 1px solid #eeeff1;
+	border-radius: 6px;
+	padding: 30px;
+	position: relative;
+	bottom: 42px;
+}
 
-	.about-tutor .f-size {
-		font-size: 16px;
-	}
+.about-tutor h3 {
+	color: #444;
+	font-size: 20px;
+	margin-bottom: 21px;
+	font-weight: bold;
+}
 
-	.about-tutor .rate {
-		color: #F58634;
-		margin-top: 5px;
-	}
+.about-tutor .details {
+	color: #696969;
+	padding-bottom: 30px;
+	border-bottom: 1px solid #e9e9e9
+}
 
-	.about-tutor .teaching {
-		background-color: #eae5e5;
-		padding: 2px 9px;
-		border-radius: 3px;
-		color: #666;
-		display: inline-block;
-	}
+.about-tutor .ans {
+	color: #444;
+	position: relative;
+	left: 8px;
+	top: 26px;
+	bottom: 1px;
 
-	.about-tutor .social {
-		position: relative;
-		left: -7px;
-		top: 4px;
-	}
+}
 
-	/*start icon*/
-	.icon-button {
-		background-color: white;
-		border-radius: 50%;
-		cursor: pointer;
-		display: inline-block;
-		font-size: 20px;
-		height: 42px;
-		line-height: 42px;
-		margin: 0 5px;
-		position: relative;
-		text-align: center;
-		-webkit-user-select: none;
-		-moz-user-select: none;
-		-ms-user-select: none;
-		user-select: none;
-		width: 42px;
-		border: 1px solid #ccc;
-		margin-right: 12px;
-	}
+.about-tutor h5 {
+	font-weight: bold;
+	font-size: 17px;
+	color: #444;
+	margin-top: 27px;
+	margin-bottom: 20px;
+}
 
-	/* Circle */
-	.icon-button span {
-		border-radius: 0;
-		display: block;
-		height: 0;
-		left: 50%;
-		margin: 0;
-		position: absolute;
-		top: 50%;
-		-webkit-transition: all 0.3s;
-		-moz-transition: all 0.3s;
-		-o-transition: all 0.3s;
-		transition: all 0.3s;
-		width: 0;
-	}
+.about-tutor .f-size {
+	font-size: 16px;
+}
 
-	.icon-button:hover span {
-		width: 42px;
-		height: 42px;
-		border-radius: 50%;
-		margin: -21px;
-	}
+.about-tutor .rate {
+	color: #F58634;
+	margin-top: 5px;
+}
 
-	.twitter span {
-		background-color: #4099ff;
-	}
+.about-tutor .teaching {
+	background-color: #eae5e5;
+	padding: 2px 9px;
+	border-radius: 3px;
+	color: #666;
+	display: inline-block;
+}
 
-	.facebook span {
-		background-color: #3B5998;
-	}
+.about-tutor .social {
+	position: relative;
+	left: -7px;
+	top: 4px;
+}
 
-	.google-plus span {
-		background-color: #db5a3c;
-	}
+/*start icon*/
+.icon-button {
+	background-color: white;
+	border-radius: 50%;
+	cursor: pointer;
+	display: inline-block;
+	font-size: 20px;
+	height: 42px;
+	line-height: 42px;
+	margin: 0 5px;
+	position: relative;
+	text-align: center;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	width: 42px;
+	border: 1px solid #ccc;
+	margin-right: 12px;
+}
 
-	/* Icons */
-	.icon-button i {
-		background: none;
-		color: white;
-		height: 50px;
-		left: 0;
-		line-height: 42px;
-		position: absolute;
-		top: 0;
-		-webkit-transition: all 0.3s;
-		-moz-transition: all 0.3s;
-		-o-transition: all 0.3s;
-		transition: all 0.3s;
-		width: 42px;
-		z-index: 10;
-	}
+/* Circle */
+.icon-button span {
+	border-radius: 0;
+	display: block;
+	height: 0;
+	left: 50%;
+	margin: 0;
+	position: absolute;
+	top: 50%;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	-o-transition: all 0.3s;
+	transition: all 0.3s;
+	width: 0;
+}
 
-	.icon-button .fa-twitter {
-		color: #4099ff;
-	}
+.icon-button:hover span {
+	width: 42px;
+	height: 42px;
+	border-radius: 50%;
+	margin: -21px;
+}
 
-	.icon-button .fa-facebook-f {
-		color: #3B5998;
-	}
+.twitter span {
+	background-color: #4099ff;
+}
 
-	.icon-button .fa-google-plus-g {
-		color: #db5a3c;
-	}
+.facebook span {
+	background-color: #3B5998;
+}
 
-	.icon-button:hover .fa-twitter,
-	.icon-button:hover .fa-facebook-f,
-	.icon-button:hover .fa-google-plus-g {
-		color: white;
-	}
+.google-plus span {
+	background-color: #db5a3c;
+}
 
-	/*end about the tutor*/
+/* Icons */
+.icon-button i {
+	background: none;
+	color: white;
+	height: 50px;
+	left: 0;
+	line-height: 42px;
+	position: absolute;
+	top: 0;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	-o-transition: all 0.3s;
+	transition: all 0.3s;
+	width: 42px;
+	z-index: 10;
+}
 
-	/*start tutor stats*/
-	.tutor-stats .inner-stats {
-		background-color: #fff;
-		border-radius: 6px;
-		border: 1px solid #f0f0f0;
-		margin-bottom: 36px;
-		padding: 20px;
-	}
+.icon-button .fa-twitter {
+	color: #4099ff;
+}
 
-	.tutor-stats h4 {
-		font-size: 20px;
-		font-weight: 600;
-		margin-bottom: 21px;
-		margin-top: 10px;
-		color: #444;
-	}
+.icon-button .fa-facebook-f {
+	color: #3B5998;
+}
 
-	.tutor-stats h5 {
-		color: #6e6e6e;
-		font-size: 16px;
-		margin-bottom: 2px;
-	}
+.icon-button .fa-google-plus-g {
+	color: #db5a3c;
+}
 
-	.tutor-stats p {
-		color: #444;
-	}
+.icon-button:hover .fa-twitter,
+.icon-button:hover .fa-facebook-f,
+.icon-button:hover .fa-google-plus-g {
+	color: white;
+}
 
-	/*end tutor stats*/
+/*end about the tutor*/
 
-	/*start scheduale*/
-	.scheduale {
-		background-color: #fff;
-		border: 1px solid #f0f0f0;
-		padding: 20px;
-		padding-bottom: 42px;
-		border-radius: 6px;
-		margin-bottom: 36px;
-	}
+/*start tutor stats*/
+.tutor-stats .inner-stats {
+	background-color: #fff;
+	border-radius: 6px;
+	border: 1px solid #f0f0f0;
+	margin-bottom: 36px;
+	padding: 20px;
+}
 
-	.scheduale h4 {
-		color: #444;
-		font-size: 20px;
-		font-weight: bold;
-		margin-bottom: 21px;
-	}
+.tutor-stats h4 {
+	font-size: 20px;
+	font-weight: 600;
+	margin-bottom: 21px;
+	margin-top: 10px;
+	color: #444;
+}
 
-	.scheduale p {
-		color: #817e7e;
-		background-color: #e9e9e9;
-		padding: 5px;
-		margin-left: 19px;
-		font-size: 15px;
-		border-radius: 3px;
-		margin-top: 32px;
-	}
+.tutor-stats h5 {
+	color: #6e6e6e;
+	font-size: 16px;
+	margin-bottom: 2px;
+}
 
-	.scheduale .fas {
-		color: #4b4b4b;
-		border: 1px solid #8d8d8d;
-		padding: 2px 3px;
-		margin: 3px;
-		cursor: pointer
-	}
+.tutor-stats p {
+	color: #444;
+}
 
-	.scheduale h6 {
-		color: #444;
-		font-size: 15px;
-		margin-bottom: 25px;
-	}
+/*end tutor stats*/
 
-	.scheduale select {
-		color: #444;
-		border: 1px solid #ccc;
-		padding: 4px;
-		float: right;
-		font-size: 15px;
-		width: 75%;
-	}
+/*start scheduale*/
+.scheduale {
+	background-color: #fff;
+	border: 1px solid #f0f0f0;
+	padding: 20px;
+	padding-bottom: 42px;
+	border-radius: 6px;
+	margin-bottom: 36px;
+}
 
-	.scheduale select:focus {
-		outline: 0
-	}
+.scheduale h4 {
+	color: #444;
+	font-size: 20px;
+	font-weight: bold;
+	margin-bottom: 21px;
+}
 
-	/*end scheduale*/
+.scheduale p {
+	color: #817e7e;
+	background-color: #e9e9e9;
+	padding: 5px;
+	margin-left: 19px;
+	font-size: 15px;
+	border-radius: 3px;
+	margin-top: 32px;
+}
 
-	/*start tutor history*/
-	.tutor-history .inner-history {
-		background-color: #fff;
-		border-radius: 6px;
-		border: 1px solid #f0f0f0;
-		margin-bottom: 36px;
-		padding: 20px;
-		padding-bottom: 42px;
-	}
+.scheduale .fas {
+	color: #4b4b4b;
+	border: 1px solid #8d8d8d;
+	padding: 2px 3px;
+	margin: 3px;
+	cursor: pointer
+}
 
-	.tutor-history .content {
-		margin-left: 0;
-		margin-top: 40px;
-	}
+.scheduale h6 {
+	color: #444;
+	font-size: 15px;
+	margin-bottom: 25px;
+}
 
-	.tutor-history h5 {
-		color: #444;
-		font-weight: bold;
-		font-size: 19px;
-		margin-top: 11px;
-		letter-spacing: .5px;
-	}
+.scheduale select {
+	color: #444;
+	border: 1px solid #ccc;
+	padding: 4px;
+	float: right;
+	font-size: 15px;
+	width: 75%;
+}
 
-	.tutor-history .feedback p {
-		position: relative;
-		margin-bottom: 0;
-		color: #999;
-		font-size: 15px;
-	}
+.scheduale select:focus {
+	outline: 0
+}
 
-	.tutor-history .feedback span {
-		position: absolute;
-		left: 30%;
-		color: #666;
-		font-size: 15px;
-	}
+/*end scheduale*/
 
-	.tutor-stats .feedback p {
-		position: relative;
-		margin-bottom: 0;
-		color: #999;
-		font-size: 15px;
-	}
+/*start tutor history*/
+.tutor-history .inner-history {
+	background-color: #fff;
+	border-radius: 6px;
+	border: 1px solid #f0f0f0;
+	margin-bottom: 36px;
+	padding: 20px;
+	padding-bottom: 42px;
+}
 
-	.tutor-history .in-prog {
-		color: #F58634 !important;
-	}
+.tutor-history .content {
+	margin-left: 0;
+	margin-top: 40px;
+}
 
-	.tutor-history .rate {
-		color: #F58634;
-		margin-top: 5px;
-	}
+.tutor-history h5 {
+	color: #444;
+	font-weight: bold;
+	font-size: 19px;
+	margin-top: 11px;
+	letter-spacing: .5px;
+}
 
-	/*end tutor history*/
-	/*start right section*/
-	.right-section .inner-right {
-		background-color: #fff;
-		text-align: center;
-		color: #444;
-		padding-bottom: 30px;
-		border-radius: 5px;
-		position: relative;
-		bottom: 233px;
-	}
+.tutor-history .feedback p {
+	position: relative;
+	margin-bottom: 0;
+	color: #999;
+	font-size: 15px;
+}
+
+.tutor-history .feedback span {
+	position: absolute;
+	left: 30%;
+	color: #666;
+	font-size: 15px;
+}
+
+.tutor-stats .feedback p {
+	position: relative;
+	margin-bottom: 0;
+	color: #999;
+	font-size: 15px;
+}
+
+.tutor-history .in-prog {
+	color: #F58634 !important;
+}
+
+.tutor-history .rate {
+	color: #F58634;
+	margin-top: 5px;
+}
+
+/*end tutor history*/
+/*start right section*/
+.right-section .inner-right {
+	background-color: #fff;
+	text-align: center;
+	color: #444;
+	padding-bottom: 30px;
+	border-radius: 5px;
+	position: relative;
+	bottom: 233px;
+}
 }
 
 .right-section span {
