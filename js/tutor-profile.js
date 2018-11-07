@@ -1,26 +1,16 @@
 $(document).ready(function () {
 	//right section scroll
-	$(window).on('scroll', function () {
-		console.log("kmvon");
-		var sc = $(window).scrollTop();
-		console.log(sc);
-		if (sc > 3100) {
-			$(".right-section").fadeOut();
-		} else if (sc > 300) {
-			$(".right-section").css({
-				"position": "fixed",
-				"top": "250px",
-				"width": "343px"
-
-			});
-		} else {
-			$(".right-section").fadeIn().css({
-				"position": "relative",
-				"top": "0px",
-
-			});
-		};
-	});
+$(window).on('scroll', function() {
+			console.log("-j--");
+			var sc = $(window).scrollTop();
+			var left_section = $("#left_section").innerHeight();
+			console.log(sc);
+			if (sc > left_section) {
+				$(".right-section").hide();
+			} else {
+				$(".right-section").show();
+			};
+		});
 	// favourited tutor
 	$(".fa-heart").click(function () {
 		$(this).css({

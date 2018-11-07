@@ -77,11 +77,13 @@ border: 1px solid #afafaf;
 	margin-bottom: 60px;
 	padding: 16px;
 	border-radius: 3px;
+	position: fixed;
 }
 
 .blog .free-trial h4 {
-	font-size: 17px;
-	color: #444;
+    font-size: 20px;
+    color: #444;
+    font-weight: bold;
 }
 
 .blog .free-trial h4::after {
@@ -94,7 +96,9 @@ border: 1px solid #afafaf;
 }
 
 .blog .free-trial img {
-	margin-bottom: 15px
+	height: 120px;
+    display: block;
+    margin: 10px auto 20px;
 }
 
 .blog .free-trial button {

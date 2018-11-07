@@ -529,7 +529,9 @@ select:focus {
 	border-radius: 5px;
 	border: 1px solid #f0eeee;
 	margin-top: 13px;
-	position: relative
+    position: absolute;
+    top: 0;
+    left: 15px;
 }
 
 .hover-card::before {
@@ -540,7 +542,7 @@ select:focus {
 	display: block;
 	position: absolute;
 	top: 76px;
-	left: -10%;
+	left: -9%;
 }
 
 .hover-card h5 {

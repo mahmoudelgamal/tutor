@@ -522,14 +522,14 @@
 /*end tutor history*/
 /*start right section*/
 .right-section .inner-right {
-	background-color: #fff;
-	text-align: center;
-	color: #444;
-	padding-bottom: 30px;
-	border-radius: 5px;
-	position: relative;
-	bottom: 233px;
-}
+    background-color: #fff;
+    text-align: center;
+    color: #444;
+    padding-bottom: 30px;
+    border-radius: 5px;
+    position: fixed;
+    top: 100px;
+    width: 380px;
 }
 
 .right-section span {

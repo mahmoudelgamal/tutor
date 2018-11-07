@@ -1,5 +1,5 @@
 
-///start multi stepper
+//start multi stepper
 
 // jQuery time
 var current_fs, next_fs, previous_fs; //fieldsets
@@ -165,51 +165,55 @@ $("#textarea").keyup(function(){
 	}
 });
 
-///valdiate
-//		$.validator.setDefaults({
-//			submitHandler: function() {
-//				alert("kemfkrfnk!");
-//			}
-//		});
-//		$("#msform").validate({
-//			rules: {
-//				username: {
-//					required: true,
-//				},
-//				email: {
-//					required: true,
-//					email: true
-//				},
-//				password: {
-//					require: true,
-//					minlength: 5
-//				},
-//				confirm_password: {
-//					required: true,
-//					minlength: 5,
-//					equalTo: "#password"
-//				}
-//
-//			},
-//			messages: {
-//				username: {
-//					required: "please enter you user name",
-//				},
-//				email: {
-//					required: "please enter your email",
-//					email: "please enter valid mail"
-//				},
-//				password: {
-//					required: "please provide password",
-//					minlength: "must be at least 5 chars long"
-//				},
-//				confirm_password: {
-//					required: "please provide password",
-//					minlength: "must be at least 5 chars long",
-//					equalTo: "please enter the same password above"
-//				}
-//			}
-//
-//
-//		});
+//valdiate
+		var valide = $.validator.setDefaults({
+			submitHandler: function() {
+				$("#next").addClass("next");
+				console.log("5444");
+				alert("ljnjk")
+			}
+		});
+document.getElementById("next").addEventListener("click", valide);
+		$("#msform").validate({
+			rules: {
+				username: {
+					required: true,
+				},
+				email: {
+					required: true,
+					email: true
+				},
+				password: {
+					required: true,
+					minlength: 5
+				},
+				confirm_password: {
+					required: true,
+					minlength: 5,
+					equalTo: "#password"
+				}
+
+			},
+			messages: {
+				username: {
+					required: "please enter you user name",
+				},
+				email: {
+					required: "please enter your email",
+					email: "please enter valid mail"
+				},
+				password: {
+					required: "please provide password",
+					minlength: "must be at least 5 chars long"
+				},
+				confirm_password: {
+					required: "please provide password",
+					minlength: "must be at least 5 chars long",
+					equalTo: "please enter the same password above"
+				}
+			}
+
+
+		});
+
 

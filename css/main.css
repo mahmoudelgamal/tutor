@@ -43,7 +43,8 @@ body {
 	transition: all ease-in-out .3s
 }
 
-.navbar-light .navbar-brand:hover {
+.navbar-light .navbar-brand:hover,
+.navbar-light .navbar-brand:focus{
 	color: #e8e1e1
 }
 

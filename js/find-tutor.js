@@ -45,10 +45,40 @@ $(document).ready(function () {
 
 	});
 	// hover card
-		//schduale
-		$("#mySchedule").jqs({
-			mode: "edit",
-			days:[
+	var theParent = document.querySelector("#card_parent");
+	for (var i = 0; i < theParent.children.length; i++) {
+		var childElement = theParent.children[i];
+		childElement.addEventListener('mouseenter', doSomething, false);
+	}
+	function doSomething(e) {
+		var mosenter = e.target.firstElementChild.id;
+		if(mosenter == "card2"){
+			$(".hover-card").animate({
+				"top" :"250px"
+			},'slow')
+		}else if(mosenter == "card3"){
+			$(".hover-card").animate({
+				"top" :"500px"
+			},'slow')
+		}else if(mosenter == "card4"){
+			$(".hover-card").animate({
+				"top" :"750px"
+			},'slow')
+		}else if(mosenter == "card5"){
+			$(".hover-card").animate({
+				"top" :"1000px"
+			},'slow')
+		}else if(mosenter == "card1"){
+			$(".hover-card").animate({
+				"top" :"0px"
+			},'slow')
+		}
+	}
+
+	//schduale
+	$("#mySchedule").jqs({
+		mode: "edit",
+		days: [
 				"Sat",
 				"Sun",
 				"Mon",
@@ -57,21 +87,21 @@ $(document).ready(function () {
 				"Thu",
 				"Fri",
 			],
-			data: [
-				{
-					day: 0,
-					periods: [
+		data: [
+			{
+				day: 0,
+				periods: [
           ["20:00", "00:00"],
           ["00:00", "02:00"]
       ]
     }, {
-					day: 1,
-					periods: [
+				day: 1,
+				periods: [
           ["00:00", "08:30"],
           ["09:00", "12:00"]
       ]
     }
   ]
-		});
-
 	});
+
+});
