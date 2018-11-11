@@ -213,10 +213,13 @@ form .u-title {
 }
 
 .custom-input-file span {
-	text-align: left;
-	display: block;
-	color: #656464;
-	font-size: 15px
+    text-align: left;
+    display: block;
+    color: #656464;
+    font-size: 15px;
+    overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
 }
 
 .custom-input-file .fa-upload {

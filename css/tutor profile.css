@@ -460,8 +460,36 @@
 .scheduale select:focus {
 	outline: 0
 }
-#mySchedule {
-	font-size: 11px
+
+.schedule-rows td {
+	width: 80px;
+	height: 30px;
+	margin: 3px;
+	padding: 5px;
+	background-color: #f7f9fb;
+	cursor: pointer;
+	border: 1px solid #ccc
+}
+
+.schedule-rows td:first-child {
+	background-color: transparent;
+	text-align: right;
+	position: relative;
+	top: -12px;
+	border: 0
+}
+
+ th{
+	color: #444;
+}
+
+.schedule-rows td[data-selected],
+.schedule-rows td[data-selecting] {
+	background-color: #08526D;
+}
+
+.schedule-rows td[data-disabled] {
+	opacity: 0.55;
 }
 
 /*end scheduale*/
@@ -522,14 +550,14 @@
 /*end tutor history*/
 /*start right section*/
 .right-section .inner-right {
-    background-color: #fff;
-    text-align: center;
-    color: #444;
-    padding-bottom: 30px;
-    border-radius: 5px;
-    position: fixed;
-    top: 100px;
-    width: 380px;
+	background-color: #fff;
+	text-align: center;
+	color: #444;
+	padding-bottom: 30px;
+	border-radius: 5px;
+	position: fixed;
+	top: 100px;
+	width: 380px;
 }
 
 .right-section span {

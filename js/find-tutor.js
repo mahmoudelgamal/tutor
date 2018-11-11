@@ -50,58 +50,46 @@ $(document).ready(function () {
 		var childElement = theParent.children[i];
 		childElement.addEventListener('mouseenter', doSomething, false);
 	}
+
 	function doSomething(e) {
 		var mosenter = e.target.firstElementChild.id;
-		if(mosenter == "card2"){
+		if (mosenter == "card2") {
 			$(".hover-card").animate({
-				"top" :"250px"
-			},'slow')
-		}else if(mosenter == "card3"){
+				"top": "250px"
+			}, 'slow')
+		} else if (mosenter == "card3") {
 			$(".hover-card").animate({
-				"top" :"500px"
-			},'slow')
-		}else if(mosenter == "card4"){
+				"top": "500px"
+			}, 'slow')
+		} else if (mosenter == "card4") {
 			$(".hover-card").animate({
-				"top" :"750px"
-			},'slow')
-		}else if(mosenter == "card5"){
+				"top": "750px"
+			}, 'slow')
+		} else if (mosenter == "card5") {
 			$(".hover-card").animate({
-				"top" :"1000px"
-			},'slow')
-		}else if(mosenter == "card1"){
+				"top": "1000px"
+			}, 'slow')
+		} else if (mosenter == "card1") {
 			$(".hover-card").animate({
-				"top" :"0px"
-			},'slow')
+				"top": "0px"
+			}, 'slow')
 		}
 	}
 
 	//schduale
-	$("#mySchedule").jqs({
-		mode: "edit",
-		days: [
-				"Sat",
-				"Sun",
-				"Mon",
-				"Tue",
-				"Wen",
-				"Thu",
-				"Fri",
-			],
-		data: [
-			{
-				day: 0,
-				periods: [
-          ["20:00", "00:00"],
-          ["00:00", "02:00"]
-      ]
-    }, {
-				day: 1,
-				periods: [
-          ["00:00", "08:30"],
-          ["09:00", "12:00"]
-      ]
-    }
-  ]
-	});
+	$("#mySchedule").dayScheduleSelector({
+		days: [0, 1, 2, 3, 4, 5, 6],
+
+		// HH:mm format
+		startTime: '08:00',
+
+		// HH:mm format       
+		endTime: '10:30',
+
+		// minutes                
+		interval: 30,
+
+		stringDays: ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'],
+	})
 
 });
