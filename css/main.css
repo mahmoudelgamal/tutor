@@ -44,7 +44,7 @@ body {
 }
 
 .navbar-light .navbar-brand:hover,
-.navbar-light .navbar-brand:focus{
+.navbar-light .navbar-brand:focus {
 	color: #e8e1e1
 }
 
@@ -1099,6 +1099,7 @@ button:focus {
 		left: 42%
 	}
 }
+
 @media (max-width:320px) {
 	.how-it-work .fa-compass {
 		left: 40%
@@ -1141,16 +1142,19 @@ button:focus {
 	width: 47%;
 	margin: auto;
 }
+
 @media (max-width:414px) {
 	.how-it-work .features .satisfaction .fas {
 		left: 40%
 	}
 }
+
 @media (max-width:320px) {
 	.how-it-work .features .satisfaction .fas {
 		left: 35%
 	}
 }
+
 /*end satisfaction*/
 
 /*end how it work*/
@@ -1263,90 +1267,35 @@ button:focus {
 
 .footer {
 
-	background-color: #fff;
-	padding-bottom: 70px;
-	padding-top: 70px
+	background-color: #2b3c42;
+	padding-top: 70px;
+	color: #fff
 }
 
-.footer .tutor h2 {
-	font-size: 50px;
-	margin-bottom: 25px;
-	color: #444
-}
-
-
-.footer .tutor p {
-	line-height: 1.5;
-	color: #9b9494;
-}
-
-.footer .tutor .read-it {
-	font-weight: bold;
-}
-
-.footer .tutor .read-it a {
-	text-decoration: none;
-	color: #333
-}
-
-.footer .tutor .read-it a:hover {
-	text-decoration: none;
-	color: #F58634
-}
-
-
-.footer h3 {
-	color: #3b3c3c;
-	margin-bottom: 11px;
-	margin-top: 26px;
-	font-size: 23px;
-}
-
-.footer .fab,
-.footer .fa {
-	color: #777777;
-	font-size: 21px;
+.footer h4 {
+	font-size: 17px;
 }
 
 .footer ul li {
-	font-size: 16px
+	font-size: 15px;
+	color: #dad9d9;
 }
 
-.footer ul li a {
-	text-decoration: none;
-	color: #333
+.footer .social-media .fab {
+	color: #2b3c42;
+	background-color: #fff;
+	padding: 5px;
+	margin-left: 17px;
+	border-radius: 50%;
+	width: 28px;
+	height: 28px;
+	text-align: center;
+	line-height: 17px;
 }
 
-.footer ul li a:hover {
-	text-decoration: none;
-	color: #F58634
+.footer p {
+	padding: 10px;
+	margin-bottom: 0
 }
 
-
-/* end footer */
-
-/* Start Copyright */
-
-.copyright {
-	border-top: 1px solid #c0c0c0;
-	padding: 20px;
-	background-color: #FFF;
-	color: #000 !important
-}
-
-.copyright ul {
-	margin: 0
-}
-
-.copyright ul li {
-	display: inline-block;
-}
-
-.copyright ul li a {
-	color: #777;
-	display: inline-block;
-	margin-left: 20px;
-	font-size: 18px;
-}
-
-/* End Copyright */
+/*end footer*/
