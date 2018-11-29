@@ -53,26 +53,27 @@ $(document).ready(function () {
 
 	function doSomething(e) {
 		var mosenter = e.target.firstElementChild.id;
+		var lastCard = $('.h-card').last();
 		if (mosenter == "card2") {
 			$(".hover-card").animate({
 				"top": "250px"
-			}, 'slow')
+			}, 'slow').fadeIn()
 		} else if (mosenter == "card3") {
 			$(".hover-card").animate({
 				"top": "500px"
-			}, 'slow')
+			}, 'slow').fadeIn()
 		} else if (mosenter == "card4") {
 			$(".hover-card").animate({
 				"top": "750px"
-			}, 'slow')
-		} else if (mosenter == "card5") {
-			$(".hover-card").animate({
-				"top": "1000px"
-			}, 'slow')
+			}, 'slow').fadeIn()
 		} else if (mosenter == "card1") {
 			$(".hover-card").animate({
 				"top": "0px"
-			}, 'slow')
+			}, 'slow').fadeIn()
+		}else if (lastCard) {
+			$(".hover-card").fadeOut()
+		}else if (! lastCard){
+			$(".hover-card").fadeIn()
 		}
 	}
 

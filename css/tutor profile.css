@@ -412,7 +412,6 @@
 	background-color: #fff;
 	border: 1px solid #f0f0f0;
 	padding: 20px;
-	padding-bottom: 42px;
 	border-radius: 6px;
 	margin-bottom: 36px;
 }
@@ -461,37 +460,77 @@
 	outline: 0
 }
 
-.schedule-rows td {
-	width: 80px;
-	height: 30px;
-	margin: 3px;
-	padding: 5px;
-	background-color: #f7f9fb;
-	cursor: pointer;
-	border: 1px solid #ccc
+.scheduale .scheduale-table {
+	margin-top: 7px;
 }
 
-.schedule-rows td:first-child {
-	background-color: transparent;
-	text-align: right;
+.scheduale .table thead th {
+	border-bottom: 0
+}
+
+.scheduale .table td,
+.scheduale .table th {
+	border: 0;
+	font-size: 14px;
+	text-align: center;
+	color: #8a8a8a;
+	padding: 8px;
+	cursor: pointer
+}
+
+.scheduale .table td:hover {
+	background-color: #F3F9FA;
+}
+
+.scheduale .table ul {
+	margin-bottom: 0
+}
+
+.scheduale .table ul.current {
+	background-color: #F3F9FA;
+}
+
+.scheduale .table ul.passed {
+	border-top: 5px solid #d6d6d6;
+	text-align: center;
+	padding-top: 7px;
+	color: #757272;
+	font-size: 16px;
+}
+
+.scheduale .table ul.coming {
+	border-top: 5px solid #08526d;
+	text-align: center;
+	padding-top: 7px;
+	color: #757272;
+	font-size: 16px;
+}
+
+.scheduale .table .last {
+	opacity: .1
+}
+
+.scheduale button {
+	display: block;
+	margin: auto;
+	color: #fff;
+	background-color: #08526d;
+	padding: 3px 9px;
 	position: relative;
-	top: -12px;
-	border: 0
+	bottom: 34px;
+	border-radius: 3px;
 }
 
- th{
-	color: #444;
+.scheduale .fa-angle-down {
+	border: 0;
+	color: #fff;
 }
-
-.schedule-rows td[data-selected],
-.schedule-rows td[data-selecting] {
-	background-color: #08526D;
+@media(max-width:576px){
+	
+.scheduale button {
+    bottom: 0;
+	}
 }
-
-.schedule-rows td[data-disabled] {
-	opacity: 0.55;
-}
-
 /*end scheduale*/
 
 /*start tutor history*/
@@ -616,8 +655,28 @@
 	}
 }
 
+@media(max-width:1250px) {
+	.right-section .inner-right {
+		max-width: 320px;
+		right: 50px
+	}
+}
+
+@media(max-width:1160px) {
+	.right-section .inner-right {
+		max-width: 280px;
+		right: 30px
+	}
+}
+@media(max-width:900px) {
+	.right-section .inner-right {
+		max-width: 250px;
+		right: 20px
+	}
+}
+
 @media(max-width:767px) {
-	.right-section {
+	.right-section .inner-right {
 		display: none
 	}
 }

@@ -4,8 +4,7 @@ $(document).ready(function () {
 		console.log("-j--");
 		var sc = $(window).scrollTop();
 		var left_section = $("#left_section").innerHeight();
-		console.log(sc);
-		if (sc > left_section) {
+		if (sc > (left_section-200)) {
 			$(".right-section").hide();
 		} else {
 			$(".right-section").show();
@@ -24,19 +23,4 @@ $(document).ready(function () {
 		});
 
 	});
-	//schduale
-	$("#mySchedule").dayScheduleSelector({
-		days: [0, 1, 2, 3, 4, 5, 6],
-
-		// HH:mm format
-		startTime: '08:00',
-
-		// HH:mm format       
-		endTime: '20:00',
-
-		// minutes                
-		interval: 30,
-
-		stringDays: ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'],
-	})
 });

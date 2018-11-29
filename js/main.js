@@ -11,12 +11,10 @@ $(document).ready(function () {
 	//article
     var arPosts =  $(".article-body").innerHeight();
 	$(window).on('scroll', function() {
-			console.log("-j--");
 			var sc = $(window).scrollTop();
 			console.log(sc);
-			if (sc > arPosts) {
+			if (sc > (arPosts-200)) {
 				$(".free-trial").fadeOut();
-				console.log("jbjh")
 			} else {
 				$(".free-trial").fadeIn();
 			} ;
@@ -24,12 +22,9 @@ $(document).ready(function () {
 	//home
     var arPosts =  $(".article-list").innerHeight();
 	$(window).on('scroll', function() {
-			console.log("-j--");
 			var sc = $(window).scrollTop();
-			console.log(sc);
-			if (sc > arPosts) {
+			if (sc > (arPosts-200)) {
 				$(".free-trial").fadeOut();
-				console.log("jbjh")
 			} else {
 				$(".free-trial").fadeIn();
 			} ;
