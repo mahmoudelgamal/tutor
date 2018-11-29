@@ -298,7 +298,7 @@ body {
 
 @media(max-width:574px) {
 	.banner .left-section select {
-		width: 70%;
+		width: 69%;
 	}
 
 	.banner .left-section .input-group {
@@ -1296,6 +1296,13 @@ button:focus {
 .footer p {
 	padding: 10px;
 	margin-bottom: 0
+}
+
+@media(max-width:767px) {
+	.footer .social-media {
+		text-align: center;
+		margin-top: 20px;
+	}
 }
 
 /*end footer*/
