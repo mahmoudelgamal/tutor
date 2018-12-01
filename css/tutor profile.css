@@ -461,36 +461,38 @@
 }
 
 .scheduale .scheduale-table {
-	margin-top: 7px;
+	margin-top: 15px;
 }
 
-.scheduale .table thead th {
-	border-bottom: 0
+.scheduale .scheduale-table li:hover {
+	background-color: #F3F9FA;
 }
 
-.scheduale .table td,
-.scheduale .table th {
-	border: 0;
+.scheduale .scheduale-table ul {
+	margin-bottom: 0;
+	text-align: center
+}
+
+.scheduale .scheduale-table ul li {
+	color: #444;
 	font-size: 14px;
-	text-align: center;
-	color: #8a8a8a;
-	padding: 8px;
 	cursor: pointer
 }
 
-.scheduale .table td:hover {
+.scheduale .scheduale-table ul li.head {
+	font-weight: 500;
+	font-size: 16px;
+	color: #6f6e6e;
+	margin-bottom: 2px;
+}
+
+.scheduale .scheduale-table ul.current {
 	background-color: #F3F9FA;
+	border-top: 5px solid #08526d;
+	padding-top: 7px
 }
 
-.scheduale .table ul {
-	margin-bottom: 0
-}
-
-.scheduale .table ul.current {
-	background-color: #F3F9FA;
-}
-
-.scheduale .table ul.passed {
+.scheduale .scheduale-table ul.passed {
 	border-top: 5px solid #d6d6d6;
 	text-align: center;
 	padding-top: 7px;
@@ -498,7 +500,7 @@
 	font-size: 16px;
 }
 
-.scheduale .table ul.coming {
+.scheduale .scheduale-table ul.coming {
 	border-top: 5px solid #08526d;
 	text-align: center;
 	padding-top: 7px;
@@ -506,8 +508,8 @@
 	font-size: 16px;
 }
 
-.scheduale .table .last {
-	opacity: .1
+.scheduale .scheduale-table li:last-of-type {
+	opacity: .2
 }
 
 .scheduale button {
@@ -517,7 +519,7 @@
 	background-color: #08526d;
 	padding: 3px 9px;
 	position: relative;
-	bottom: 34px;
+	bottom: 16px;
 	border-radius: 3px;
 }
 
@@ -525,12 +527,21 @@
 	border: 0;
 	color: #fff;
 }
-@media(max-width:576px){
-	
-.scheduale button {
-    bottom: 0;
+
+@media(max-width:575px) {
+
+	.scheduale button {
+		bottom: 0;
 	}
+	.scheduale .scheduale-container {
+		overflow-x: auto
+	}
+	.scheduale .scheduale-table {
+		width: 480px;
+	}
+	
 }
+
 /*end scheduale*/
 
 /*start tutor history*/
@@ -668,6 +679,7 @@
 		right: 30px
 	}
 }
+
 @media(max-width:900px) {
 	.right-section .inner-right {
 		max-width: 250px;

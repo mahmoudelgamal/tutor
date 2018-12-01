@@ -1,0 +1,99 @@
+/*start message*/
+.message {
+	max-width: 550px;
+	margin: auto
+}
+
+.message .brand-logo {
+	border-bottom: 1px solid #dedede;
+}
+
+.message .brand-logo h5 {
+	text-align: center;
+	font-size: 29px;
+	color: #444;
+	margin-top: 20px;
+	padding-bottom: 11px
+}
+
+.message .message-body {
+	padding: 30px;
+}
+
+.message .message-body h2 {
+	font-size: 27px;
+	color: #484848;
+}
+
+.message .message-body h3,
+.message .message-body p {
+	color: #3e3e3e;
+	font-weight: 500;
+	font-size: 15px;
+	margin: 18px 0;
+}
+
+.message .message-body p a {
+	color: #3e3e3e;
+}
+
+.message .message-body button {
+	display: block;
+	margin: 38px auto;
+	color: #fff;
+	background-color: #08526D;
+	font-size: 20px;
+	font-weight: 500;
+	padding: 10px 63px;
+	border-radius: 28px;
+}
+
+.btn:focus {
+	box-shadow: none
+}
+
+.message .message-body p:last-of-type {
+	margin: 30px 0
+}
+
+.message .message-body .need-help {
+	margin: 46px 0 0px;
+	border-bottom: 1px solid #ddd;
+	padding-bottom: 24px;
+}
+
+.message .message-body .need-help h5 {
+	font-weight: 500;
+	color: #a0a0a0;
+}
+
+.message .message-body .need-help span {
+	display: block;
+	font-weight: 400;
+	color: #a9a9a9;
+}
+
+.message .message-footer p {
+	color: #a9a9a9;
+}
+
+.message .message-footer .fab {
+	color: #fff;
+	background-color: red;
+	border-radius: 50%;
+	width: 50px;
+	height: 50px;
+	font-size: 21px;
+	line-height: 49px;
+	margin-left: 11px;
+}
+
+.message .message-footer a .fa-facebook-f {
+	background-color: #3b5998
+}
+
+.message .message-footer a .fa-twitter {
+	background-color: #1da1f2;
+}
+
+/*end message*/
