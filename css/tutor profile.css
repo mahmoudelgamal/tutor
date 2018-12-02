@@ -511,8 +511,18 @@
 .scheduale .scheduale-table li:last-of-type {
 	opacity: .2
 }
-
 .scheduale button {
+background-color: transparent;
+    border: 0;
+    cursor: pointer;
+}
+.scheduale button:active {
+	outline: none;
+	box-shadow: none;
+	border: 0;
+	border-style: #fff
+}
+.scheduale button.btn {
 	display: block;
 	margin: auto;
 	color: #fff;
