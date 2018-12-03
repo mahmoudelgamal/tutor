@@ -511,6 +511,9 @@
 .scheduale .scheduale-table li:last-of-type {
 	opacity: .2
 }
+.scheduale .scheduale-table li .modal button {
+	position: static
+}
 .scheduale button {
 background-color: transparent;
     border: 0;
