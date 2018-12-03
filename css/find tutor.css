@@ -5,7 +5,7 @@ body {
 
 /*start frame work*/
 @media (min-width: 1200px) {
-	.container {
+	.tutor-container .container {
 		max-width: 1323px;
 	}
 }
@@ -266,18 +266,6 @@ select:focus {
 /*end filter framework */
 
 /*start tutor card*/
-/*
-.tutor-card .row {
-	margin: 0
-}
-
-.tutor-card .col-3,
-.tutor-card .col-2,
-.tutor-card .col-6 {
-	padding: 0
-}
-*/
-
 .tutor-card .content {
 	background-color: #fff;
 	border-radius: 6px;

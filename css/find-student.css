@@ -1,0 +1,45 @@
+/*start filter*/
+.filter ul h4.country-title,
+.filter ul h4.spocken-title {
+	color: #777575;
+	font-size: 12px;
+	text-align: center;
+	margin-top: 5px
+}
+
+.filter ul li {
+	padding-bottom: 6px;
+}
+
+/*end filter*/
+
+/*start student card*/
+@media (min-width: 1200px) {
+	.container {
+		max-width: 965px;
+	}
+}
+
+.tutor-card .content {
+	padding: 15px 10px;
+}
+
+.tutor-card .content .tutor-pict {
+	width: 85px;
+	height: 85px;
+	margin-top: 5px;
+}
+
+.tutor-card .content h3 {
+	font-size: 20px;
+	color: #444;
+	margin-top: 3px;
+}
+
+@media(max-width:575px) {
+	.tutor-card .content h3 {
+		margin-left: 14px;
+	}
+}
+
+/*wnd student card*/
