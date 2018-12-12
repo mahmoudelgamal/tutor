@@ -74,20 +74,4 @@ $(document).ready(function () {
 
 
 
-	//schduale
-	$("#mySchedule").dayScheduleSelector({
-		days: [0, 1, 2, 3, 4, 5, 6],
-
-		// HH:mm format
-		startTime: '08:00',
-
-		// HH:mm format       
-		endTime: '10:30',
-
-		// minutes                
-		interval: 30,
-
-		stringDays: ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'],
-	})
-
 });

@@ -522,6 +522,7 @@ select:focus {
     position: absolute;
     top: 0;
     left: 15px;
+	display: none
 }
 
 .hover-card::before {
@@ -572,39 +573,19 @@ select:focus {
 
 #mySchedule {
 	width: 95%;
-	height: 200px
+	height: 230px;
+	margin: auto
 }
-.schedule-rows td {
-	width: 80px;
-	height: 30px;
-	margin: 3px;
-	padding: 5px;
-	background-color: #f7f9fb;
-	cursor: pointer;
-	border: 1px solid #ccc
-}
-
-.schedule-rows td:first-child {
-	background-color: transparent;
-	text-align: right;
-	position: relative;
-	top: -12px;
+.scheduale {
 	border: 0
 }
-
- th{
-	color: #444;
+.scheduale .scheduale-table {
+	margin-top: 0
 }
-
-.schedule-rows td[data-selected],
-.schedule-rows td[data-selecting] {
-	background-color: #08526D;
+.scheduale .fa-angle-right {
+    border: 0;
+    color: #fff;
 }
-
-.schedule-rows td[data-disabled] {
-	opacity: 0.55;
-}
-
 @media(max-width:1116px) {
 	.hover-card::before {
 		left: -12%;

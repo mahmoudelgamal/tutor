@@ -10,6 +10,7 @@
 	<link href="css/chosen.css" rel="css/stylesheet" />
 	<link rel="stylesheet" href="css/log%20in.css">
 	<link rel="stylesheet" href="css/jquery.schedule.min.css">
+	<link rel="stylesheet" href="css/tutor%20profile.css">
 	<link rel="stylesheet" href="css/find%20tutor.css">
 </head>
 
@@ -207,7 +208,6 @@
 			<div class="row">
 				<div class="col-lg-8">
 					<div id="card_parent">
-
 						<div class="row">
 							<div class="col-12 h-card" id="card1">
 								<div class="content">
@@ -262,20 +262,182 @@
 									</div>
 								</div>
 							</div>
-
 							<div id="content-1" class="hover-content">
-									<video width="95%" height="240" controls>
-										<source src="video/Demons.mp4" type="video/mp4">
-										Your browser does not support the video tag.
-									</video>
-									<h5><i class="fas fa-globe-asia"></i> Times are shown in your local timezone</h5>
-									<div class="calender" style="width: 95% ;margin: auto">
-										<div id="mySchedule"></div>
+								<video width="95%" height="240" controls>
+									<source src="video/Demons.mp4" type="video/mp4">
+									Your browser does not support the video tag.
+								</video>
+								<h5><i class="fas fa-globe-asia"></i> Times are shown in your local timezone</h5>
+								<div class="scheduale" id="mySchedule">
+									<div class="scheduale-container">
+										<div class="scheduale-table">
+											<div class="row">
+												<div class="col">
+													<ul class="list-unstyled passed">
+														<li class="head">Mon</li>
+														<li class="head">25</li>
+														<li>
+															<form>
+																<button type="button" data-toggle="modal" data-target="#Modal1">00:30</button>
+															</form>
+														</li>
+														<li>
+															<form>
+																<button type="button" data-toggle="modal" data-target="#Modal2">00:30</button>
+															</form>
+														</li>
+														<li>
+															<form>
+																<button type="button" data-toggle="modal" data-target="#Modal3">00:30</button>
+															</form>
+														</li>
+														<li>
+															<form>
+																<button type="button" data-toggle="modal" data-target="#Modal4">00:30</button>
+															</form>
+														</li>
+														<li>
+															<form>
+																<button type="button" data-toggle="modal" data-target="#Modal5">00:30</button>
+															</form>
+														</li>
+
+													</ul>
+												</div>
+												<div class="col">
+													<ul class="list-unstyled passed">
+														<li class="head">Tue</li>
+														<li class="head">25</li>
+														<li>
+															<form>
+																<button type="button" data-toggle="modal" data-target="#Modal1">00:30</button>
+															</form>
+														</li>
+														<li>
+															<form>
+																<button type="button" data-toggle="modal" data-target="#Modal2">00:30</button>
+															</form>
+														</li>
+														<li>
+															<form>
+																<button type="button" data-toggle="modal" data-target="#Modal3">00:30</button>
+															</form>
+														</li>
+														<li>
+															<form>
+																<button type="button" data-toggle="modal" data-target="#Modal4">00:30</button>
+															</form>
+														</li>
+														<li>
+															<form>
+																<button type="button" data-toggle="modal" data-target="#Modal5">00:30</button>
+															</form>
+														</li>
+
+
+													</ul>
+												</div>
+												<div class="col">
+													<ul class="list-unstyled passed">
+														<li class="head">Wens</li>
+														<li class="head">25</li>
+														<li>
+															<form>
+																<button type="button" data-toggle="modal" data-target="#Modal1">00:30</button>
+															</form>
+														</li>
+														<li>
+															<form>
+																<button type="button" data-toggle="modal" data-target="#Modal2">00:30</button>
+															</form>
+														</li>
+														<li>
+															<form>
+																<button type="button" data-toggle="modal" data-target="#Modal3">00:30</button>
+															</form>
+														</li>
+														<li>
+															<form>
+																<button type="button" data-toggle="modal" data-target="#Modal4">00:30</button>
+															</form>
+														</li>
+														<li>
+															<form>
+																<button type="button" data-toggle="modal" data-target="#Modal5">00:30</button>
+															</form>
+														</li>
+													</ul>
+												</div>
+												<div class="col">
+													<ul class="list-unstyled current">
+														<li class="head">Thrus</li>
+														<li class="head">25</li>
+														<li>
+															<form>
+																<button type="button" data-toggle="modal" data-target="#Modal1">00:30</button>
+															</form>
+														</li>
+														<li>
+															<form>
+																<button type="button" data-toggle="modal" data-target="#Modal2">00:30</button>
+															</form>
+														</li>
+														<li>
+															<form>
+																<button type="button" data-toggle="modal" data-target="#Modal3">00:30</button>
+															</form>
+														</li>
+														<li>
+															<form>
+																<button type="button" data-toggle="modal" data-target="#Modal4">00:30</button>
+															</form>
+														</li>
+														<li>
+															<form>
+																<button type="button" data-toggle="modal" data-target="#Modal5">00:30</button>
+															</form>
+														</li>
+
+													</ul>
+												</div>
+												<div class="col">
+													<ul class="list-unstyled coming">
+														<li class="head">Fri</li>
+														<li class="head">25</li>
+														<li>
+															<form>
+																<button type="button" data-toggle="modal" data-target="#Modal1">00:30</button>
+															</form>
+														</li>
+														<li>
+															<form>
+																<button type="button" data-toggle="modal" data-target="#Modal2">00:30</button>
+															</form>
+														</li>
+														<li>
+															<form>
+																<button type="button" data-toggle="modal" data-target="#Modal3">00:30</button>
+															</form>
+														</li>
+														<li>
+															<form>
+																<button type="button" data-toggle="modal" data-target="#Modal4">00:30</button>
+															</form>
+														</li>
+														<li>
+															<form>
+																<button type="button" data-toggle="modal" data-target="#Modal5">00:30</button>
+															</form>
+														</li>
+													</ul>
+												</div>
+											</div>
+											<button type="button" class="btn">View all Scheduale <i class="fas fa-angle-right"></i></button>
+										</div>
 									</div>
-									<button class="btn view-scheduale">View All Scheduale</button>
+								</div>
 							</div>
 						</div>
-
 						<div class="row">
 							<div class="col-12 h-card" id="card2">
 								<div class="content">
@@ -330,22 +492,182 @@
 									</div>
 								</div>
 							</div>
-
 							<div id="content-2" class="hover-content">
-									<video width="95%" height="240" controls>
-										<source src="video/Demons.mp4" type="video/mp4">
-										Your browser does not support the video tag.
-									</video>
-									<h5><i class="fas fa-globe-asia"></i> hi shown in your local timezone</h5>
-									<div class="calender" style="width: 95% ;margin: auto">
-										<div id="mySchedule"></div>
-									</div>
-									<button class="btn view-scheduale">View All Scheduale</button>
+								<video width="95%" height="240" controls>
+									<source src="video/Demons.mp4" type="video/mp4">
+									Your browser does not support the video tag.
+								</video>
+								<h5><i class="fas fa-globe-asia"></i> Times are shown in your local timezone</h5>
+								<div class="scheduale" id="mySchedule">
+									<div class="scheduale-container">
+										<div class="scheduale-table">
+											<div class="row">
+												<div class="col">
+													<ul class="list-unstyled passed">
+														<li class="head">Mon</li>
+														<li class="head">25</li>
+														<li>
+															<form>
+																<button type="button" data-toggle="modal" data-target="#Modal1">00:30</button>
+															</form>
+														</li>
+														<li>
+															<form>
+																<button type="button" data-toggle="modal" data-target="#Modal2">00:30</button>
+															</form>
+														</li>
+														<li>
+															<form>
+																<button type="button" data-toggle="modal" data-target="#Modal3">00:30</button>
+															</form>
+														</li>
+														<li>
+															<form>
+																<button type="button" data-toggle="modal" data-target="#Modal4">00:30</button>
+															</form>
+														</li>
+														<li>
+															<form>
+																<button type="button" data-toggle="modal" data-target="#Modal5">00:30</button>
+															</form>
+														</li>
 
+													</ul>
+												</div>
+												<div class="col">
+													<ul class="list-unstyled passed">
+														<li class="head">Tue</li>
+														<li class="head">25</li>
+														<li>
+															<form>
+																<button type="button" data-toggle="modal" data-target="#Modal1">00:30</button>
+															</form>
+														</li>
+														<li>
+															<form>
+																<button type="button" data-toggle="modal" data-target="#Modal2">00:30</button>
+															</form>
+														</li>
+														<li>
+															<form>
+																<button type="button" data-toggle="modal" data-target="#Modal3">00:30</button>
+															</form>
+														</li>
+														<li>
+															<form>
+																<button type="button" data-toggle="modal" data-target="#Modal4">00:30</button>
+															</form>
+														</li>
+														<li>
+															<form>
+																<button type="button" data-toggle="modal" data-target="#Modal5">00:30</button>
+															</form>
+														</li>
+
+
+													</ul>
+												</div>
+												<div class="col">
+													<ul class="list-unstyled passed">
+														<li class="head">Wens</li>
+														<li class="head">25</li>
+														<li>
+															<form>
+																<button type="button" data-toggle="modal" data-target="#Modal1">00:30</button>
+															</form>
+														</li>
+														<li>
+															<form>
+																<button type="button" data-toggle="modal" data-target="#Modal2">00:30</button>
+															</form>
+														</li>
+														<li>
+															<form>
+																<button type="button" data-toggle="modal" data-target="#Modal3">00:30</button>
+															</form>
+														</li>
+														<li>
+															<form>
+																<button type="button" data-toggle="modal" data-target="#Modal4">00:30</button>
+															</form>
+														</li>
+														<li>
+															<form>
+																<button type="button" data-toggle="modal" data-target="#Modal5">00:30</button>
+															</form>
+														</li>
+													</ul>
+												</div>
+												<div class="col">
+													<ul class="list-unstyled current">
+														<li class="head">Thrus</li>
+														<li class="head">25</li>
+														<li>
+															<form>
+																<button type="button" data-toggle="modal" data-target="#Modal1">00:30</button>
+															</form>
+														</li>
+														<li>
+															<form>
+																<button type="button" data-toggle="modal" data-target="#Modal2">00:30</button>
+															</form>
+														</li>
+														<li>
+															<form>
+																<button type="button" data-toggle="modal" data-target="#Modal3">00:30</button>
+															</form>
+														</li>
+														<li>
+															<form>
+																<button type="button" data-toggle="modal" data-target="#Modal4">00:30</button>
+															</form>
+														</li>
+														<li>
+															<form>
+																<button type="button" data-toggle="modal" data-target="#Modal5">00:30</button>
+															</form>
+														</li>
+
+													</ul>
+												</div>
+												<div class="col">
+													<ul class="list-unstyled coming">
+														<li class="head">Fri</li>
+														<li class="head">25</li>
+														<li>
+															<form>
+																<button type="button" data-toggle="modal" data-target="#Modal1">00:30</button>
+															</form>
+														</li>
+														<li>
+															<form>
+																<button type="button" data-toggle="modal" data-target="#Modal2">00:30</button>
+															</form>
+														</li>
+														<li>
+															<form>
+																<button type="button" data-toggle="modal" data-target="#Modal3">00:30</button>
+															</form>
+														</li>
+														<li>
+															<form>
+																<button type="button" data-toggle="modal" data-target="#Modal4">00:30</button>
+															</form>
+														</li>
+														<li>
+															<form>
+																<button type="button" data-toggle="modal" data-target="#Modal5">00:30</button>
+															</form>
+														</li>
+													</ul>
+												</div>
+											</div>
+											<button type="button" class="btn">View all Scheduale <i class="fas fa-angle-right"></i></button>
+										</div>
+									</div>
+								</div>
 							</div>
 						</div>
-
-
 						<div class="row">
 							<div class="col-12 h-card" id="card3">
 								<div class="content">
@@ -400,9 +722,182 @@
 									</div>
 								</div>
 							</div>
+							<div id="content-3" class="hover-content">
+								<video width="95%" height="240" controls>
+									<source src="video/Demons.mp4" type="video/mp4">
+									Your browser does not support the video tag.
+								</video>
+								<h5><i class="fas fa-globe-asia"></i> Times are shown in your local timezone</h5>
+								<div class="scheduale" id="mySchedule">
+									<div class="scheduale-container">
+										<div class="scheduale-table">
+											<div class="row">
+												<div class="col">
+													<ul class="list-unstyled passed">
+														<li class="head">Mon</li>
+														<li class="head">25</li>
+														<li>
+															<form>
+																<button type="button" data-toggle="modal" data-target="#Modal1">00:30</button>
+															</form>
+														</li>
+														<li>
+															<form>
+																<button type="button" data-toggle="modal" data-target="#Modal2">00:30</button>
+															</form>
+														</li>
+														<li>
+															<form>
+																<button type="button" data-toggle="modal" data-target="#Modal3">00:30</button>
+															</form>
+														</li>
+														<li>
+															<form>
+																<button type="button" data-toggle="modal" data-target="#Modal4">00:30</button>
+															</form>
+														</li>
+														<li>
+															<form>
+																<button type="button" data-toggle="modal" data-target="#Modal5">00:30</button>
+															</form>
+														</li>
+
+													</ul>
+												</div>
+												<div class="col">
+													<ul class="list-unstyled passed">
+														<li class="head">Tue</li>
+														<li class="head">25</li>
+														<li>
+															<form>
+																<button type="button" data-toggle="modal" data-target="#Modal1">00:30</button>
+															</form>
+														</li>
+														<li>
+															<form>
+																<button type="button" data-toggle="modal" data-target="#Modal2">00:30</button>
+															</form>
+														</li>
+														<li>
+															<form>
+																<button type="button" data-toggle="modal" data-target="#Modal3">00:30</button>
+															</form>
+														</li>
+														<li>
+															<form>
+																<button type="button" data-toggle="modal" data-target="#Modal4">00:30</button>
+															</form>
+														</li>
+														<li>
+															<form>
+																<button type="button" data-toggle="modal" data-target="#Modal5">00:30</button>
+															</form>
+														</li>
+
+
+													</ul>
+												</div>
+												<div class="col">
+													<ul class="list-unstyled passed">
+														<li class="head">Wens</li>
+														<li class="head">25</li>
+														<li>
+															<form>
+																<button type="button" data-toggle="modal" data-target="#Modal1">00:30</button>
+															</form>
+														</li>
+														<li>
+															<form>
+																<button type="button" data-toggle="modal" data-target="#Modal2">00:30</button>
+															</form>
+														</li>
+														<li>
+															<form>
+																<button type="button" data-toggle="modal" data-target="#Modal3">00:30</button>
+															</form>
+														</li>
+														<li>
+															<form>
+																<button type="button" data-toggle="modal" data-target="#Modal4">00:30</button>
+															</form>
+														</li>
+														<li>
+															<form>
+																<button type="button" data-toggle="modal" data-target="#Modal5">00:30</button>
+															</form>
+														</li>
+													</ul>
+												</div>
+												<div class="col">
+													<ul class="list-unstyled current">
+														<li class="head">Thrus</li>
+														<li class="head">25</li>
+														<li>
+															<form>
+																<button type="button" data-toggle="modal" data-target="#Modal1">00:30</button>
+															</form>
+														</li>
+														<li>
+															<form>
+																<button type="button" data-toggle="modal" data-target="#Modal2">00:30</button>
+															</form>
+														</li>
+														<li>
+															<form>
+																<button type="button" data-toggle="modal" data-target="#Modal3">00:30</button>
+															</form>
+														</li>
+														<li>
+															<form>
+																<button type="button" data-toggle="modal" data-target="#Modal4">00:30</button>
+															</form>
+														</li>
+														<li>
+															<form>
+																<button type="button" data-toggle="modal" data-target="#Modal5">00:30</button>
+															</form>
+														</li>
+
+													</ul>
+												</div>
+												<div class="col">
+													<ul class="list-unstyled coming">
+														<li class="head">Fri</li>
+														<li class="head">25</li>
+														<li>
+															<form>
+																<button type="button" data-toggle="modal" data-target="#Modal1">00:30</button>
+															</form>
+														</li>
+														<li>
+															<form>
+																<button type="button" data-toggle="modal" data-target="#Modal2">00:30</button>
+															</form>
+														</li>
+														<li>
+															<form>
+																<button type="button" data-toggle="modal" data-target="#Modal3">00:30</button>
+															</form>
+														</li>
+														<li>
+															<form>
+																<button type="button" data-toggle="modal" data-target="#Modal4">00:30</button>
+															</form>
+														</li>
+														<li>
+															<form>
+																<button type="button" data-toggle="modal" data-target="#Modal5">00:30</button>
+															</form>
+														</li>
+													</ul>
+												</div>
+											</div>
+											<button type="button" class="btn">View all Scheduale <i class="fas fa-angle-right"></i></button>
+										</div>
+									</div>
+								</div>
+							</div>
 						</div>
-
-
 						<div class="row">
 							<div class="col-12 h-card" id="card4">
 								<div class="content">
@@ -457,9 +952,182 @@
 									</div>
 								</div>
 							</div>
+							<div id="content-4" class="hover-content">
+								<video width="95%" height="240" controls>
+									<source src="video/Demons.mp4" type="video/mp4">
+									Your browser does not support the video tag.
+								</video>
+								<h5><i class="fas fa-globe-asia"></i> Times are shown in your local timezone</h5>
+								<div class="scheduale" id="mySchedule">
+									<div class="scheduale-container">
+										<div class="scheduale-table">
+											<div class="row">
+												<div class="col">
+													<ul class="list-unstyled passed">
+														<li class="head">Mon</li>
+														<li class="head">25</li>
+														<li>
+															<form>
+																<button type="button" data-toggle="modal" data-target="#Modal1">00:30</button>
+															</form>
+														</li>
+														<li>
+															<form>
+																<button type="button" data-toggle="modal" data-target="#Modal2">00:30</button>
+															</form>
+														</li>
+														<li>
+															<form>
+																<button type="button" data-toggle="modal" data-target="#Modal3">00:30</button>
+															</form>
+														</li>
+														<li>
+															<form>
+																<button type="button" data-toggle="modal" data-target="#Modal4">00:30</button>
+															</form>
+														</li>
+														<li>
+															<form>
+																<button type="button" data-toggle="modal" data-target="#Modal5">00:30</button>
+															</form>
+														</li>
+
+													</ul>
+												</div>
+												<div class="col">
+													<ul class="list-unstyled passed">
+														<li class="head">Tue</li>
+														<li class="head">25</li>
+														<li>
+															<form>
+																<button type="button" data-toggle="modal" data-target="#Modal1">00:30</button>
+															</form>
+														</li>
+														<li>
+															<form>
+																<button type="button" data-toggle="modal" data-target="#Modal2">00:30</button>
+															</form>
+														</li>
+														<li>
+															<form>
+																<button type="button" data-toggle="modal" data-target="#Modal3">00:30</button>
+															</form>
+														</li>
+														<li>
+															<form>
+																<button type="button" data-toggle="modal" data-target="#Modal4">00:30</button>
+															</form>
+														</li>
+														<li>
+															<form>
+																<button type="button" data-toggle="modal" data-target="#Modal5">00:30</button>
+															</form>
+														</li>
+
+
+													</ul>
+												</div>
+												<div class="col">
+													<ul class="list-unstyled passed">
+														<li class="head">Wens</li>
+														<li class="head">25</li>
+														<li>
+															<form>
+																<button type="button" data-toggle="modal" data-target="#Modal1">00:30</button>
+															</form>
+														</li>
+														<li>
+															<form>
+																<button type="button" data-toggle="modal" data-target="#Modal2">00:30</button>
+															</form>
+														</li>
+														<li>
+															<form>
+																<button type="button" data-toggle="modal" data-target="#Modal3">00:30</button>
+															</form>
+														</li>
+														<li>
+															<form>
+																<button type="button" data-toggle="modal" data-target="#Modal4">00:30</button>
+															</form>
+														</li>
+														<li>
+															<form>
+																<button type="button" data-toggle="modal" data-target="#Modal5">00:30</button>
+															</form>
+														</li>
+													</ul>
+												</div>
+												<div class="col">
+													<ul class="list-unstyled current">
+														<li class="head">Thrus</li>
+														<li class="head">25</li>
+														<li>
+															<form>
+																<button type="button" data-toggle="modal" data-target="#Modal1">00:30</button>
+															</form>
+														</li>
+														<li>
+															<form>
+																<button type="button" data-toggle="modal" data-target="#Modal2">00:30</button>
+															</form>
+														</li>
+														<li>
+															<form>
+																<button type="button" data-toggle="modal" data-target="#Modal3">00:30</button>
+															</form>
+														</li>
+														<li>
+															<form>
+																<button type="button" data-toggle="modal" data-target="#Modal4">00:30</button>
+															</form>
+														</li>
+														<li>
+															<form>
+																<button type="button" data-toggle="modal" data-target="#Modal5">00:30</button>
+															</form>
+														</li>
+
+													</ul>
+												</div>
+												<div class="col">
+													<ul class="list-unstyled coming">
+														<li class="head">Fri</li>
+														<li class="head">25</li>
+														<li>
+															<form>
+																<button type="button" data-toggle="modal" data-target="#Modal1">00:30</button>
+															</form>
+														</li>
+														<li>
+															<form>
+																<button type="button" data-toggle="modal" data-target="#Modal2">00:30</button>
+															</form>
+														</li>
+														<li>
+															<form>
+																<button type="button" data-toggle="modal" data-target="#Modal3">00:30</button>
+															</form>
+														</li>
+														<li>
+															<form>
+																<button type="button" data-toggle="modal" data-target="#Modal4">00:30</button>
+															</form>
+														</li>
+														<li>
+															<form>
+																<button type="button" data-toggle="modal" data-target="#Modal5">00:30</button>
+															</form>
+														</li>
+													</ul>
+												</div>
+											</div>
+											<button type="button" class="btn">View all Scheduale <i class="fas fa-angle-right"></i></button>
+										</div>
+									</div>
+								</div>
+							</div>
 						</div>
-
-
 						<div class="row">
 							<div class="col-12 h-card" id="card5">
 								<div class="content">
@@ -514,6 +1182,181 @@
 									</div>
 								</div>
 							</div>
+							<div id="content-5" class="hover-content">
+								<video width="95%" height="240" controls>
+									<source src="video/Demons.mp4" type="video/mp4">
+									Your browser does not support the video tag.
+								</video>
+								<h5><i class="fas fa-globe-asia"></i> Times are shown in your local timezone</h5>
+								<div class="scheduale" id="mySchedule">
+									<div class="scheduale-container">
+										<div class="scheduale-table">
+											<div class="row">
+												<div class="col">
+													<ul class="list-unstyled passed">
+														<li class="head">Mon</li>
+														<li class="head">25</li>
+														<li>
+															<form>
+																<button type="button" data-toggle="modal" data-target="#Modal1">00:30</button>
+															</form>
+														</li>
+														<li>
+															<form>
+																<button type="button" data-toggle="modal" data-target="#Modal2">00:30</button>
+															</form>
+														</li>
+														<li>
+															<form>
+																<button type="button" data-toggle="modal" data-target="#Modal3">00:30</button>
+															</form>
+														</li>
+														<li>
+															<form>
+																<button type="button" data-toggle="modal" data-target="#Modal4">00:30</button>
+															</form>
+														</li>
+														<li>
+															<form>
+																<button type="button" data-toggle="modal" data-target="#Modal5">00:30</button>
+															</form>
+														</li>
+
+													</ul>
+												</div>
+												<div class="col">
+													<ul class="list-unstyled passed">
+														<li class="head">Tue</li>
+														<li class="head">25</li>
+														<li>
+															<form>
+																<button type="button" data-toggle="modal" data-target="#Modal1">00:30</button>
+															</form>
+														</li>
+														<li>
+															<form>
+																<button type="button" data-toggle="modal" data-target="#Modal2">00:30</button>
+															</form>
+														</li>
+														<li>
+															<form>
+																<button type="button" data-toggle="modal" data-target="#Modal3">00:30</button>
+															</form>
+														</li>
+														<li>
+															<form>
+																<button type="button" data-toggle="modal" data-target="#Modal4">00:30</button>
+															</form>
+														</li>
+														<li>
+															<form>
+																<button type="button" data-toggle="modal" data-target="#Modal5">00:30</button>
+															</form>
+														</li>
+
+
+													</ul>
+												</div>
+												<div class="col">
+													<ul class="list-unstyled passed">
+														<li class="head">Wens</li>
+														<li class="head">25</li>
+														<li>
+															<form>
+																<button type="button" data-toggle="modal" data-target="#Modal1">00:30</button>
+															</form>
+														</li>
+														<li>
+															<form>
+																<button type="button" data-toggle="modal" data-target="#Modal2">00:30</button>
+															</form>
+														</li>
+														<li>
+															<form>
+																<button type="button" data-toggle="modal" data-target="#Modal3">00:30</button>
+															</form>
+														</li>
+														<li>
+															<form>
+																<button type="button" data-toggle="modal" data-target="#Modal4">00:30</button>
+															</form>
+														</li>
+														<li>
+															<form>
+																<button type="button" data-toggle="modal" data-target="#Modal5">00:30</button>
+															</form>
+														</li>
+													</ul>
+												</div>
+												<div class="col">
+													<ul class="list-unstyled current">
+														<li class="head">Thrus</li>
+														<li class="head">25</li>
+														<li>
+															<form>
+																<button type="button" data-toggle="modal" data-target="#Modal1">00:30</button>
+															</form>
+														</li>
+														<li>
+															<form>
+																<button type="button" data-toggle="modal" data-target="#Modal2">00:30</button>
+															</form>
+														</li>
+														<li>
+															<form>
+																<button type="button" data-toggle="modal" data-target="#Modal3">00:30</button>
+															</form>
+														</li>
+														<li>
+															<form>
+																<button type="button" data-toggle="modal" data-target="#Modal4">00:30</button>
+															</form>
+														</li>
+														<li>
+															<form>
+																<button type="button" data-toggle="modal" data-target="#Modal5">00:30</button>
+															</form>
+														</li>
+
+													</ul>
+												</div>
+												<div class="col">
+													<ul class="list-unstyled coming">
+														<li class="head">Fri</li>
+														<li class="head">25</li>
+														<li>
+															<form>
+																<button type="button" data-toggle="modal" data-target="#Modal1">00:30</button>
+															</form>
+														</li>
+														<li>
+															<form>
+																<button type="button" data-toggle="modal" data-target="#Modal2">00:30</button>
+															</form>
+														</li>
+														<li>
+															<form>
+																<button type="button" data-toggle="modal" data-target="#Modal3">00:30</button>
+															</form>
+														</li>
+														<li>
+															<form>
+																<button type="button" data-toggle="modal" data-target="#Modal4">00:30</button>
+															</form>
+														</li>
+														<li>
+															<form>
+																<button type="button" data-toggle="modal" data-target="#Modal5">00:30</button>
+															</form>
+														</li>
+													</ul>
+												</div>
+											</div>
+											<button type="button" class="btn">View all Scheduale <i class="fas fa-angle-right"></i></button>
+										</div>
+									</div>
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -524,15 +1367,177 @@
 							Your browser does not support the video tag.
 						</video>
 						<h5><i class="fas fa-globe-asia"></i> Times are shown in your local timezone</h5>
-						<div class="calender" style="width: 95% ;margin: auto">
-							<div id="mySchedule"></div>
+						<div class="scheduale" id="mySchedule">
+							<div class="scheduale-container">
+								<div class="scheduale-table">
+									<div class="row">
+										<div class="col">
+											<ul class="list-unstyled passed">
+												<li class="head">Mon</li>
+												<li class="head">25</li>
+												<li>
+													<form>
+														<button type="button" data-toggle="modal" data-target="#Modal1">00:30</button>
+													</form>
+												</li>
+												<li>
+													<form>
+														<button type="button" data-toggle="modal" data-target="#Modal2">00:30</button>
+													</form>
+												</li>
+												<li>
+													<form>
+														<button type="button" data-toggle="modal" data-target="#Modal3">00:30</button>
+													</form>
+												</li>
+												<li>
+													<form>
+														<button type="button" data-toggle="modal" data-target="#Modal4">00:30</button>
+													</form>
+												</li>
+												<li>
+													<form>
+														<button type="button" data-toggle="modal" data-target="#Modal5">00:30</button>
+													</form>
+												</li>
+
+											</ul>
+										</div>
+										<div class="col">
+											<ul class="list-unstyled passed">
+												<li class="head">Tue</li>
+												<li class="head">25</li>
+												<li>
+													<form>
+														<button type="button" data-toggle="modal" data-target="#Modal1">00:30</button>
+													</form>
+												</li>
+												<li>
+													<form>
+														<button type="button" data-toggle="modal" data-target="#Modal2">00:30</button>
+													</form>
+												</li>
+												<li>
+													<form>
+														<button type="button" data-toggle="modal" data-target="#Modal3">00:30</button>
+													</form>
+												</li>
+												<li>
+													<form>
+														<button type="button" data-toggle="modal" data-target="#Modal4">00:30</button>
+													</form>
+												</li>
+												<li>
+													<form>
+														<button type="button" data-toggle="modal" data-target="#Modal5">00:30</button>
+													</form>
+												</li>
+
+
+											</ul>
+										</div>
+										<div class="col">
+											<ul class="list-unstyled passed">
+												<li class="head">Wens</li>
+												<li class="head">25</li>
+												<li>
+													<form>
+														<button type="button" data-toggle="modal" data-target="#Modal1">00:30</button>
+													</form>
+												</li>
+												<li>
+													<form>
+														<button type="button" data-toggle="modal" data-target="#Modal2">00:30</button>
+													</form>
+												</li>
+												<li>
+													<form>
+														<button type="button" data-toggle="modal" data-target="#Modal3">00:30</button>
+													</form>
+												</li>
+												<li>
+													<form>
+														<button type="button" data-toggle="modal" data-target="#Modal4">00:30</button>
+													</form>
+												</li>
+												<li>
+													<form>
+														<button type="button" data-toggle="modal" data-target="#Modal5">00:30</button>
+													</form>
+												</li>
+											</ul>
+										</div>
+										<div class="col">
+											<ul class="list-unstyled current">
+												<li class="head">Thrus</li>
+												<li class="head">25</li>
+												<li>
+													<form>
+														<button type="button" data-toggle="modal" data-target="#Modal1">00:30</button>
+													</form>
+												</li>
+												<li>
+													<form>
+														<button type="button" data-toggle="modal" data-target="#Modal2">00:30</button>
+													</form>
+												</li>
+												<li>
+													<form>
+														<button type="button" data-toggle="modal" data-target="#Modal3">00:30</button>
+													</form>
+												</li>
+												<li>
+													<form>
+														<button type="button" data-toggle="modal" data-target="#Modal4">00:30</button>
+													</form>
+												</li>
+												<li>
+													<form>
+														<button type="button" data-toggle="modal" data-target="#Modal5">00:30</button>
+													</form>
+												</li>
+
+											</ul>
+										</div>
+										<div class="col">
+											<ul class="list-unstyled coming">
+												<li class="head">Fri</li>
+												<li class="head">25</li>
+												<li>
+													<form>
+														<button type="button" data-toggle="modal" data-target="#Modal1">00:30</button>
+													</form>
+												</li>
+												<li>
+													<form>
+														<button type="button" data-toggle="modal" data-target="#Modal2">00:30</button>
+													</form>
+												</li>
+												<li>
+													<form>
+														<button type="button" data-toggle="modal" data-target="#Modal3">00:30</button>
+													</form>
+												</li>
+												<li>
+													<form>
+														<button type="button" data-toggle="modal" data-target="#Modal4">00:30</button>
+													</form>
+												</li>
+												<li>
+													<form>
+														<button type="button" data-toggle="modal" data-target="#Modal5">00:30</button>
+													</form>
+												</li>
+											</ul>
+										</div>
+									</div>
+									<button type="button" class="btn">View all Scheduale <i class="fas fa-angle-right"></i></button>
+								</div>
+							</div>
 						</div>
-						<button class="btn view-scheduale">View All Scheduale</button>
 					</div>
 				</div>
 			</div>
-
-
 		</div>
 	</section>
 	<!--end tutor card-->
@@ -621,7 +1626,6 @@
 	<script src="js/propper.js"></script>
 	<script src="js/bootstrap.min.js"></script>
 	<script src="js/chosen.jquery.js"></script>
-	<script src="js/SchedualPlugin.js"></script>
 	<script src="js/find-tutor.js"></script>
 
 </body>
