@@ -1276,9 +1276,16 @@ button:focus {
 	font-size: 17px;
 }
 
-.footer ul li {
+.footer ul li a {
 	font-size: 15px;
 	color: #dad9d9;
+	margin-left: 2px;
+	text-decoration: none;
+	transition: all ease-in-out .3s
+}
+
+.footer ul li a:hover {
+	color: #F5863A
 }
 
 .footer .social-media .fab {
@@ -1292,7 +1299,13 @@ button:focus {
 	text-align: center;
 	line-height: 17px;
 }
-
+.footer .social-media a {
+	text-decoration: none;
+	transition: all ease-in-out .3s
+}
+.footer .social-media a:hover {
+	opacity: .7
+}
 .footer p {
 	padding: 10px;
 	margin-bottom: 0

@@ -3,7 +3,16 @@ $(document).ready(function () {
 	$(window).on('scroll', function () {
 		var sc = $(window).scrollTop();
 		var left_section = $("#left_section").innerHeight();
-		if (sc > (left_section-200)) {
+		if (sc > 100) {
+			$(".inner-right").css({
+				'top': 30
+			})
+		} else {
+			$(".inner-right").css({
+				'top': 100
+			})
+		}
+		if (sc > (left_section - 200)) {
 			$(".right-section").hide();
 		} else {
 			$(".right-section").show();

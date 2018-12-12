@@ -9,8 +9,40 @@
 
 .filter ul li {
 	padding-bottom: 6px;
+	position: relative;
+	height: 56px
 }
-
+.filter  select {
+    border: 1px solid #fff !important;
+    margin: auto;
+    margin-left: 0px;
+    height: 50px;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: 107%;
+    padding-left: 10px;
+    color: #444;
+    font-size: 15px;
+    font-weight: 600;
+}
+.filter .t-teaches select {
+    border: 1px solid #fff !important;
+    margin-left: 15px;
+    height: 50px;
+    position: absolute;
+    bottom: 0px;
+    left: -3px;
+    width: 101%;
+    padding-left: 10px;
+	color: #444;
+	font-size: 15px;
+	font-weight: 600;
+}
+.filter  h4 {
+	position: relative;
+	z-index: 9
+}
 /*end filter*/
 
 /*start student card*/

@@ -56,13 +56,12 @@
 						<div class="content t-teaches">
 							<h4 class="text-uppercase t-teaches-title">tutor teaches</h4>
 							<div class="row">
-								<input list="learn" name="learn">
-								<datalist id="learn">
-									<option value="Hifz">
-									<option value="Recitation">
-									<option value="Tajweed">
-									<option value="Arabic">
-								</datalist>
+								<select class="select">
+									<option value="Recitation">Recitation</option>
+									<option value="Hifz">Hifz</option>
+									<option value="Tajweed">Tajweed</option>
+									<option value="Arabic">Arabic</option>
+								</select>
 							</div>
 						</div>
 					</li>
@@ -84,24 +83,26 @@
 							<h4 class="c-birth-title">STATUS & GENDER</h4>
 							<div class="row">
 								<div class="col-6">
-									<select>
-										<optgroup label="Status">
-											<option value="volvo">Online</option>
-											<option value="saab">Offline</option>
-										</optgroup>
-									</select>
+									<div class="gender">
+										<select class="select">
+											<optgroup label="Status">
+												<option value="online">Online</option>
+												<option value="offline">Offline</option>
+											</optgroup>
+										</select>
+									</div>
 								</div>
 								<div class="col-6">
-									<select>
-										<optgroup label="Gender">
-											<option value="mercedes">Mele</option>
-											<option value="audi">Female</option>
-										</optgroup>
-									</select>
+									<div class="statu">
+										<select class="select">
+											<optgroup label="Gender">
+												<option value="mele">Mele</option>
+												<option value="female">Female</option>
+											</optgroup>
+										</select>
+									</div>
 								</div>
 							</div>
-
-
 						</div>
 					</li>
 					<li class="col-md-3 pick-time">

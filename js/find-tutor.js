@@ -14,7 +14,7 @@ $(document).ready(function () {
 	});
 
 	//price
-	$("input ,select").click(function () {
+	$(".input ,.select").click(function () {
 		$(".pick-day").hide();
 		$(".price-range").hide();
 		$(".price").removeClass("boxshadow");
@@ -67,7 +67,7 @@ $(document).ready(function () {
 		$(".hover-card").animate({
 			"top": n + "px"
 		}, 'slow').fadeIn()
-		if (lastCard.attr("id")  == mosenter ) {
+		if (lastCard.attr("id") == mosenter ) {
 			$(".hover-card").fadeOut();
 		} 
 	};
