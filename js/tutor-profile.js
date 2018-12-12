@@ -1,7 +1,6 @@
 $(document).ready(function () {
 	//right section scroll
 	$(window).on('scroll', function () {
-		console.log("-j--");
 		var sc = $(window).scrollTop();
 		var left_section = $("#left_section").innerHeight();
 		if (sc > (left_section-200)) {

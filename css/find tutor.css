@@ -274,7 +274,9 @@ select:focus {
 	margin-bottom: 13px;
 	overflow: hidden
 }
-
+.hover-content {
+	display: none
+}
 .tutor-card .content .tutor-pict {
 	border-radius: 50%;
 	width: 130px;

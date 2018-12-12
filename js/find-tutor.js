@@ -45,37 +45,34 @@ $(document).ready(function () {
 
 	});
 	// hover card
+	var card_parent = $("#card_parent").innerHeight();
+	if (card_parent < 550) {
+		$(".h-card").attr("id", "x")
+	}
+
 	var theParent = document.querySelector("#card_parent");
 	for (var i = 0; i < theParent.children.length; i++) {
 		var childElement = theParent.children[i];
-		childElement.addEventListener('mouseenter', doSomething, false);
+		childElement.addEventListener('mouseenter', cardHover, false);
 	}
 
-	function doSomething(e) {
+	function cardHover(e) {
 		var mosenter = e.target.firstElementChild.id;
+		var res = mosenter.replace("card", "");
+		var content = $("#content-"+res).html();
+		$(".hover-card").html(content);
+		console.log();
 		var lastCard = $('.h-card').last();
-		if (mosenter == "card2") {
-			$(".hover-card").animate({
-				"top": "250px"
-			}, 'slow').fadeIn()
-		} else if (mosenter == "card3") {
-			$(".hover-card").animate({
-				"top": "500px"
-			}, 'slow').fadeIn()
-		} else if (mosenter == "card4") {
-			$(".hover-card").animate({
-				"top": "750px"
-			}, 'slow').fadeIn()
-		} else if (mosenter == "card1") {
-			$(".hover-card").animate({
-				"top": "0px"
-			}, 'slow').fadeIn()
-		}else if (lastCard) {
-			$(".hover-card").fadeOut()
-		}else if (! lastCard){
-			$(".hover-card").fadeIn()
-		}
-	}
+		var n = (res - 1) * 250;
+		$(".hover-card").animate({
+			"top": n + "px"
+		}, 'slow').fadeIn()
+		if (lastCard.attr("id")  == mosenter ) {
+			$(".hover-card").fadeOut();
+		} 
+	};
+
+
 
 	//schduale
 	$("#mySchedule").dayScheduleSelector({

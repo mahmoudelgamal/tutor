@@ -110,5 +110,10 @@ border: 1px solid #afafaf;
 .custom-select:focus {
 	box-shadow: none
 }
+@media(max-width:767px){
+	.blog .free-trial {
+		display: none !important
+	}
+}
 
 /*end free trial*/
