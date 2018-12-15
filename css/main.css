@@ -1,4 +1,3 @@
-
 /*start frame work*/
 @media (min-width: 1200px) {
 	.container {
@@ -8,13 +7,15 @@
 
 /*end frame work*/
 /*start overlay*/
+/*
 .overlay {
 	width: 100%;
-	height: 650px;
+	height: auto;
 	background-image: linear-gradient(to right, rgba(11, 106, 134, 0.9), rgba(210, 93, 7, 0.9));
 	position: absolute;
-	bottom: 0
+	bottom: 0;
 }
+*/
 
 /*end over lay*/
 /* start navbar*/
@@ -111,7 +112,18 @@
 }
 
 @media(max-width:767px) {
-
+	.navbar {
+		position: absolute;
+		top: 0;
+		width: 100%;
+		padding-top: 3px;
+		padding-bottom: 0px;
+		padding-left: 0;
+		padding-right: 0
+	}
+	.navbar-collapse {
+		background-color: rgba(0,0,0,.9)
+	} 
 	.navbar-light .r-nav a,
 	.navbar-light .navbar-nav .navb-link {
 		text-align: center;
@@ -174,9 +186,15 @@
 	background-repeat: no-repeat;
 	background-position: center right;
 	margin-top: -90px;
-	    padding-top: 90px;
 }
-
+.overlay {
+	width: 100%;
+	padding-top: 200px;
+	margin-top: -90px;
+	background-image: linear-gradient(to right, rgba(11, 106, 134, 0.9), rgba(210, 93, 7, 0.9));
+	min-height: 720px
+	
+}
 .banner .left-section h2 {
 	margin-top: 107px;
 	color: #fff;
@@ -495,7 +513,7 @@
 /*start become tutor*/
 .become-tutor {
 	background-color: #f7f9fb;
-	padding-top: 80px
+	padding-bottom: 80px;
 }
 
 .become-tutor .over-lay {
@@ -1027,7 +1045,6 @@ button:focus {
 /*start how it work*/
 .how-it-work {
 	background-color: #f7f9fb;
-	padding-bottom: 80px;
 	padding-top: 80px;
 }
 
@@ -1161,7 +1178,8 @@ button:focus {
 /*start tutor rate*/
 .tutor-rate {
 	background-color: #F7F9FB;
-	padding-bottom: 80px
+	padding-bottom: 80px;
+	padding-top: 80px;
 }
 
 .tutor-rate h2 {
@@ -1298,13 +1316,16 @@ button:focus {
 	text-align: center;
 	line-height: 17px;
 }
+
 .footer .social-media a {
 	text-decoration: none;
 	transition: all ease-in-out .3s
 }
+
 .footer .social-media a:hover {
 	opacity: .7
 }
+
 .footer p {
 	padding: 10px;
 	margin-bottom: 0
