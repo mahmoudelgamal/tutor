@@ -6,18 +6,7 @@
 }
 
 /*end frame work*/
-/*start overlay*/
-/*
-.overlay {
-	width: 100%;
-	height: auto;
-	background-image: linear-gradient(to right, rgba(11, 106, 134, 0.9), rgba(210, 93, 7, 0.9));
-	position: absolute;
-	bottom: 0;
-}
-*/
 
-/*end over lay*/
 /* start navbar*/
 .navbar {
 
@@ -199,7 +188,7 @@
 }
 
 .banner .left-section h2 {
-	margin-top: 143px;
+	margin-top: 175px;
 	color: #fff;
 	font-size: 21px;
 	margin-bottom: 20px;
@@ -302,11 +291,11 @@
 	cursor: pointer;
 	width: 583px;
 	text-align: center;
-	margin: auto;
+	margin: 20px auto;
 }
 
 .banner .btn-center .log-in {
-	background-color: #F58634;
+	background-color: #08526D;
 	position: relative;
 	left: 7px;
 	color: #fff;
@@ -314,7 +303,7 @@
 }
 
 .banner .btn-center .sign-up {
-	background-color: #08526D;
+	background-color: #F58634;
 	color: #FFF;
 	transition: all ease-in-out .5s
 }
@@ -327,7 +316,7 @@
 .banner .btn-center .log-in {
 	display: inline-block;
 	opacity: .9;
-	padding: 5px 60px;
+	padding: 0px 60px 3px;
 	font-weight: 700;
 }
 
@@ -389,6 +378,16 @@
 	}
 }
 
+.banner .btn-center .log-in {
+	border-top-left-radius: 8px;
+	border-bottom-left-radius: 8px;
+}
+
+.banner .btn-center .sign-up {
+	border-top-right-radius: 8px;
+	border-bottom-right-radius: 8px;
+}
+
 @media(max-width:574px) {
 	.banner .left-section select {
 		width: 69%;
@@ -403,7 +402,7 @@
 	}
 
 	.banner .btn-center .sign-up,
-	.bannerbanner .btn-center .log-in {
+	.banner .btn-center .log-in {
 		display: inline-block;
 		opacity: .9;
 		padding: 6px 30px;
@@ -415,15 +414,14 @@
 	}
 }
 
-@media(max-width:400px) {
+@media(max-width:480px) {
 	.banner .left-section h2 b {
-		font-size: 44px;
+		font-size: 25px;
 	}
 
 	.banner .left-section h2 {
-		margin-top: 40px
+		margin-top: 149px;
 	}
-
 
 	.banner .left-section .input-group {
 		border: 2px solid #fff;
@@ -443,14 +441,27 @@
 	}
 
 	.banner .left-section select {
-		width: 73%;
+		width: 64.7%;
+	}
+
+	.banner .btn-center .register {
+		font-size: 18px;
+		width: 340px;
+	}
+
+	.banner .btn-center .c-acount {
+		font-size: 14px;
+	}
+
+	.banner .btn-center .log-in {
+		padding: 5px 36px;
 	}
 }
 
 @media(max-width:375px) {
 
 	.banner .left-section select {
-		width: 70%;
+		width: 60%;
 	}
 }
 
@@ -462,9 +473,26 @@
 }
 
 @media(max-width:320px) {
+	.banner .btn-center .register {
+		font-size: 16px;
+		width: 313px;
+		margin-left: -8px
+	}
+
+	.banner .btn-center .log-in {
+		padding: 4px 9px;
+	}
+
+	.banner .btn-center .c-acount {
+		font-size: 13px;
+	}
+
+	.banner .left-section .input-group {
+		width: 100%;
+	}
 
 	.banner .left-section select {
-		width: 64%;
+		width: 63.6%;
 	}
 }
 
