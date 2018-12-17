@@ -1,0 +1,44 @@
+body {
+	background-color: #fff !important
+}
+
+/*start about us*/
+.about-us h1 {
+	margin-top: 50px;
+	text-align: center;
+	color: #444;
+	margin-bottom: 20px;
+}
+
+.about-us h1 b {
+	color: #F58634;
+}
+
+.about-us .section-one,
+.about-us .section-two {
+	border-bottom: 1px solid #ddd;
+	margin-bottom: 35px
+}
+
+.about-us p {
+	color: #444;
+	font-size: 18px;
+}
+.about-us .section-two p:last-of-type {
+    margin-top: 30px;
+}
+.about-us .quoter {
+	color: #797979;
+	font-weight: 600;
+}
+
+.about-us button {
+	background-color: #08526D;
+	color: #fff;
+	font-size: 17px;
+	font-weight: 600;
+	margin-bottom: 35px;
+	margin-top: 18px;
+}
+
+/*end about us*/
