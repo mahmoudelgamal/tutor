@@ -309,14 +309,15 @@ select:focus {
 
 .tutor-card .content .tutor-pict {
 	border-radius: 50%;
-	width: 130px;
-	height: 130px;
+	width: 135px;
+	height: 135px;
 	display: block;
-	margin: auto;
+	margin: 34px auto;
 	position: relative;
 	cursor: pointer;
 	-webkit-transition: all ease-in-out .3s;
 	transition: all ease-in-out .3s;
+
 }
 
 .tutor-card .content .tutor-pict:hover {
@@ -334,7 +335,7 @@ select:focus {
 }
 
 .tutor-card .content .r-name {
-	margin: 10px;
+	margin: 17px;
 	text-align: center;
 }
 
@@ -378,6 +379,7 @@ select:focus {
 .tutor-card .content h3 .fas {
 	color: #08526D;
 	font-size: 17px;
+	margin-left: 10px
 }
 
 .tutor-card .content .your-language {
@@ -439,7 +441,9 @@ select:focus {
 }
 
 .tutor-card .content button {
-	margin-top: 24px
+	display: block;
+	margin: 10px auto;
+	min-width: 160px;
 }
 
 .tutor-card .content .free-trial {
@@ -460,6 +464,37 @@ select:focus {
 	color: #f58634;
 }
 
+.tutor-card .content .location,
+.tutor-card .content .lesson {
+	background-color: #F8F8F8;
+	border-radius: 5px;
+	padding: 5px;
+	margin-bottom: 12px;
+}
+
+.tutor-card .content .location p,
+.tutor-card .content .lesson p {
+	margin-bottom: 3px;
+	color: #7C7B77
+}
+
+.tutor-card .content .location img {
+	border-radius: 50%;
+	margin: 16px auto;
+	display: block;
+}
+
+.tutor-card .content .lesson .fas {
+	font-size: 20px;
+	padding: 14px 9px;
+	color: #50bf16;
+}
+.tutor-card .content .fa-star {
+    font-size: 15px;
+    position: relative;
+    bottom: 2px;
+    color: #F69248;
+}
 @media(max-width:1216px) {
 	.tutor-card .content .r-name {
 		margin: 10px 0 -11px 9%;
